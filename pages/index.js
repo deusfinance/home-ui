@@ -1,5 +1,7 @@
 import Navbar from '../components/Navbar/Navbar2'
 
+
+
 export default function Home() {
   return (
   <div>
@@ -30,8 +32,8 @@ export default function Home() {
             <h4 className="transpose">
               <span className="next-gen">
                 Transpose any digitally verifiable asset securely onto the blockchain.<br />
-                Trade real-world assets and derivatives on the blockchain without limits.
-                <a className="learn-more" href="https://wiki.deus.finance" target="_blank">Learn more</a>
+                Trade real-world assets and derivatives on the blockchain without limits. 
+                <a className="learn-more" href="https://wiki.deus.finance" target="_blank"> Learn more </a>
               </span>
               <br />
             </h4>

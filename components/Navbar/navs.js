@@ -4,31 +4,31 @@ export default [{
     children: [{
         id: 'Muon Presale'.toUpperCase(),
         text: 'muon presale',
-        path: '/muon-presale',
+        path: 'https://app.deus.finance/muon-presale',
         exact: true
       },
       {
         id: 'Stake And Yeild'.toUpperCase(),
         text: 'STAKE & YIELD',
-        path: '/stake-and-yield',
+        path: 'https://app.deus.finance/stake-and-yield',
         exact: true
       },
       {
         id: 'sealed Swap'.toUpperCase(),
         text: 'sealed swap',
-        path: '/sealed-swap',
+        path: 'https://app.deus.finance/sealed-swap',
         exact: true
       },
       {
         id: 'vaultsL',
         text: 'VAULTS (LEGACY)',
-        path: '/valuts',
+        path: 'https://app.deus.finance/vaults',
         exact: true
       },
       {
         id: 'STAKING (LEGACY)',
         text: 'STAKING (LEGACY)',
-        path: '/staking',
+        path: 'https://app.deus.finance/staking',
       }
     ]
   },
@@ -38,25 +38,25 @@ export default [{
     children: [{
         id: 'ETH',
         text: 'ETH',
-        path: '/synchronizer',
+        path: 'https://app.deus.finance/synchronizer',
         exact: true
       },
       {
         id: 'xDai',
         text: 'xDAI',
-        path: '/crosschain/xdai/synchronizer',
+        path: 'https://app.deus.finance/crosschain/xdai/synchronizer',
         exact: true
       },
       {
         id: 'bsc',
         text: 'BSC',
-        path: '/crosschain/bsc/synchronizer',
+        path: 'https://app.deus.finance/crosschain/bsc/synchronizer',
         exact: true
       },
       {
         id: 'heco',
         text: 'HECO',
-        path: '/crosschain/heco/synchronizer',
+        path: 'https://app.deus.finance/crosschain/heco/synchronizer',
         exact: true
       },
     ]
@@ -64,7 +64,7 @@ export default [{
   {
     id: 'swap',
     text: 'SWAP',
-    path: '/swap',
+    path: 'https://app.deus.finance/swap',
     exact: true,
   },
   {

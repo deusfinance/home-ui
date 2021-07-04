@@ -47,7 +47,6 @@ export const RowBetween = styled(Row)`
 `
 
 export const NavbarWrap = styled(RowBetween)`
-    z-index: 6;
     position: relative;
     height: 55px;
     font-size: 16px;
@@ -68,7 +67,7 @@ export const NavbarWrap = styled(RowBetween)`
         font-size: 12px;
     `}
 
-    ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+    /* ${({ theme }) => theme.mediaWidth.upToExtraSmall`
         .network-label{
             display: none;
         }
@@ -78,7 +77,7 @@ export const NavbarWrap = styled(RowBetween)`
         .hamb{
             margin-left: 10px;
         }
-    `}
+    `} */
 
     @media screen and (max-width: 1400px) {
         font-size: 12px;
@@ -114,7 +113,7 @@ export const NavbarMobileContent = styled.div`
     overflow-y: auto;
     background: ${({ theme }) => theme.bg1};
     margin-right: ${({ open }) => open ? "0" : "-300px"};
-    z-index:10;
+    z-index: 10;
     > ul{
         display: flex;
         flex-direction: column;
@@ -165,10 +164,9 @@ export const NavbarMobileContent = styled.div`
         }
         .nav-item-ln {
             display: block;
-            margin-top: 14px;
-            margin-bottom: 0;
-            padding-top: 0;
-            padding-bottom: 0;
+            margin-top: 10;
+            padding-bottom: 10px;
+            margin-bottom: -10px;
         }
         .nav-item {
             text-align: left;
@@ -221,6 +219,7 @@ export const NavWarningButton = styled(NavButton).attrs({
     color: ${({ theme }) => theme.label_warning};
     border: 0.5px solid ${({ theme }) => theme.bg_warning};
 `
+
 export const NavbarSideWrap = styled.div`
     margin-top: 17px;
     display: flex;

@@ -109,8 +109,6 @@ const Navbar = () => {
                     </li>
                 </NavbarContentWrap>
 
-                
-
                 <OutsideClickHandler onOutsideClick={() => setOpen(false)}>
                     <NavbarMobileContent open={open}>
                         <ul>
