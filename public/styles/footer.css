@@ -1,0 +1,90 @@
+footer {
+  font-family: Monument Grotesk;
+  font-weight: 400;
+  margin-top: 200px;
+  border-top: 1px solid #808080;
+}
+
+footer .container {
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .group {
+  display: inline-block;
+  margin: 40px 30px;
+  vertical-align: top;
+}
+
+footer .group h4 {
+  font-weight: 400;
+}
+
+footer .group ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+footer .group ul li {
+  cursor: pointer;
+  margin: 5px auto;
+}
+
+footer .group ul li a {
+  color: #ffffff;
+}
+
+footer .group ul li a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.gdrp-popup {
+  background: #111111;
+  padding: 15px;
+  border-top: 1px solid #272727;
+  color: #ffffff;
+  font-family: Monument Grotesk;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.gdrp-popup .got-it {
+  margin-left: 20px;
+}
+
+.gdrp-popup .got-it button {
+  cursor: pointer;
+  font-size: 17px;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 5px 15px;
+  border: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.01%, #0779e4), color-stop(93.42%, #1dd3bd));
+  background: linear-gradient(90deg, #0779e4 -0.01%, #1dd3bd 93.42%);
+}
+
+@media screen and (max-width: 768px) {
+  footer .container {
+    display: block;
+  }
+  footer .group ul li {
+    margin: 5px auto;
+  }
+  .gdrp-popup .got-it button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

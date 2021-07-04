@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #a02e2e;
+}
+
+.blured {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+  height: 100vh;
+  background: #000000;
+  opacity: 0.7;
+}
+
+.hidden {
+  display: none;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.vertical-center {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Toastify__toast {
+  border-radius: 6px;
+  font-family: Comfortaa;
+  font-weight: bold;
+}
+
+.Toastify__toast--success {
+  color: #1a111d;
+  background: #00ffc8;
+}
+
+.Toastify__toast--warning {
+  background: #d2386c;
+}
+
+.Toastify__toast--info {
+  background: #0072b5;
+}
+
+.grad-wrap {
+  background: linear-gradient(90.11deg, #69c9ce 1.13%, #d5e061 98.54%);
+  padding: 2px;
+  border-radius: 6px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Monument Grotesk;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.grad-wrap .grad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #111111;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.grad-wrap .grad:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.dea-wrap {
+  text-align: left;
+  float: left;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  padding-left: 40px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.dea-wrap:hover {
+  -webkit-filter: brightness(3);
+          filter: brightness(3);
+  opacity: 0.8;
+}
+
+.dea-wrap img {
+  border-radius: 50%;
+  padding: 2px;
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+
+@font-face {
+  font-family: Lambok;
+  src: url("../fonts/Lombok.ttf");
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url("../fonts/Comfortaa.ttf");
+}
+
+@font-face {
+  font-family: Segoe UI;
+  src: url("../fonts/SegoeUI.woff");
+}
+
+@font-face {
+  font-family: Roboto Medium;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url("../fonts/Monument/edumonumentgroteskmono-regular-webfont.woff2") format("woff2"), url("../fonts/Monument/edumonumentgroteskmono-regular-webfont.woff") format("woff"), url("../fonts/Monument/edumonumentgroteskmono-regular-webfont.ttf") format("truetype"), url("../fonts/Monument/edumonumentgroteskmono-regular-webfont.svg#edu_monument_grotesk_monoRg") format("svg");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url("../fonts/MonumentGrotesk-Regular.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Edu Monument Grotesk Semi-Mono";
+  src: url("../fonts/EduMonumentGroteskSemi-Mono/EduMonumentGroteskSemi-Mono-Regular.woff2") format("woff2"), url("../fonts/EduMonumentGroteskSemi-Mono/EduMonumentGroteskSemi-Mono-Regular.woff") format("woff"), url("../fonts/EduMonumentGroteskSemi-Mono/EduMonumentGroteskSemi-Mono-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url("../fonts/monument-grotesk-regular.a2574db.ttf") format("ttf");
+  font-weight: 200;
+}
+
+body {
+  background: #000000;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.privacy-wrapper {
+  padding-top: 150px;
+  margin: auto;
+  max-width: 1500px;
+  color: #ffffff;
+  font-family: Monument Grotesk;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.privacy-wrapper .privacy-content h1 {
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.privacy-wrapper .privacy-content .main {
+  font-family: Monument Grotesk;
+}
+
+.privacy-wrapper .privacy-content .main h4 {
+  margin: 25px auto;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.privacy-wrapper .privacy-content .main .main-title {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.privacy-wrapper .privacy-content .main .description {
+  margin-top: 5px;
+  opacity: 0.5;
+}
+
+.privacy-wrapper .privacy-content .main .sub-title {
+  text-transform: uppercase;
+  font-size: 17.5px;
+  margin-top: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=privacy.css.map */
