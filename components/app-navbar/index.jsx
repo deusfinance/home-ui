@@ -47,6 +47,7 @@ export const RowBetween = styled(Row)`
 `
 
 export const NavbarWrap = styled(RowBetween)`
+    z-index: 6;
     position: relative;
     height: 55px;
     font-size: 16px;

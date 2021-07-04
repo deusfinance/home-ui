@@ -40,6 +40,15 @@ const Navbar = () => {
         getTVL()
     }, [])
 
+    useEffect(() => {
+        const blurPop = "blurred"
+        if (!open) {
+            document.getElementById("blur-pop").classList.remove(blurPop);
+        } else {
+            document.getElementById("blur-pop").classList.add(blurPop);
+        }
+    }, [open])
+
     return (<>
         <NavbarWrap>
             <Router>

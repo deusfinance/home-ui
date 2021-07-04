@@ -13,18 +13,14 @@ body,
   height: 100%;
 }
 
-body {
-  background: #a02e2e;
-}
-
-.blured {
-  top: 0;
-  position: fixed;
-  width: 100vw;
-  z-index: 5;
-  height: 100vh;
-  background: #000000;
-  opacity: 0.7;
+.blurred {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.8;
 }
 
 .hidden {

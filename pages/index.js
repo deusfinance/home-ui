@@ -11,11 +11,12 @@ export default function Home() {
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/base.css" />
     <link rel="icon" href="imgs/favicon.ico" />
-    {/* <link rel="apple-touch-icon" href="imgs/favicon.ico" /> */}
     <title>DEUS finance</title>
 
     <Navbar />
+    <div id="blur-pop"></div>
 
     <div style={{width: '100%', borderBottom: '2px solid #242424', position: 'relative'}}>
       <div className="home-wrapper ">
