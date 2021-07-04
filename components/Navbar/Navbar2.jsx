@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ExternalLink } from '../Link';
-import { NavLink, StaticRouter as Router, useLocation } from 'react-router-dom';
+import { NavLink, StaticRouter as Router } from 'react-router-dom';
 import navs from './navs';
 import OutsideClickHandler from 'react-outside-click-handler';
-
+import LanguageSelector from './LanguageSelector';
 import {
     NavbarContentWrap,
     NavbarWrap,
@@ -13,7 +13,6 @@ import {
     SubNavbarContentWrap,
     NavbarMobileContent
 } from '../app-navbar/index';
-import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -42,11 +41,10 @@ const Navbar = () => {
 
     useEffect(() => {
         const blurPop = "blurred"
-        if (!open) {
-            document.getElementById("blur-pop").classList.remove(blurPop);
-        } else {
-            document.getElementById("blur-pop").classList.add(blurPop);
-        }
+        if (typeof document === undefined) return
+        const divClass = document.getElementById("blur-pop").classList;
+        if (!open) divClass.remove(blurPop);
+        else divClass.add(blurPop);
     }, [open])
 
     return (<>

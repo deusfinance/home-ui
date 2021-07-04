@@ -5,7 +5,12 @@ import { I18nextProvider } from "react-i18next"
 import i18n from '../utils/i18n';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import * as gtag from './gtag';
+import * as gtag from '../utils/gtag';
+import '../public/styles/navbar.css';
+import '../public/styles/index.css';
+import '../public/styles/footer.css';
+import '../public/styles/base.css';
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
