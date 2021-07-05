@@ -225,7 +225,7 @@ export const NavbarSideWrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     >*{
         margin: 0 7.5px;
     }
