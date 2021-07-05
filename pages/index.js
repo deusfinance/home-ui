@@ -13,8 +13,7 @@ export default function Home() {
           <div className="asset">
             <Image className="deus-dea-logo" src="/imgs/deus-dea.svg" alt="deus-dea" height="85px" width="85px" />
             <h1 className="tokenization">
-              {/* maxheight="45px" maxwidth="70%" */}
-              <img className="deus-logo" src="/imgs/deus-finance.svg" alt="deus-logo" /> <br />
+              <Image className="deus-logo" src="/imgs/deus-finance.svg" alt="deus-logo" height="62px" width="363" maxwidth="90%" /> <br />
               UNLIMITED ACCESS TO GLOBAL MARKETS
             </h1>
             <h4 className="transpose">
@@ -43,7 +42,7 @@ export default function Home() {
     </div>
     <div className="why-wrap">
       <div className="item">
-        <img src="/imgs/deus-his.jpg" alt="WHY DEUS"  />
+        <Image src="/imgs/deus-his.jpg" alt="WHY DEUS" width="892px" height="525px" maxwidth="100%"/>
       </div>
       <div className="item">
         <div className="why-about-deus">
