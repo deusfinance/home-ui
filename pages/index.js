@@ -89,7 +89,7 @@ export default function Home() {
         <div className="sync-item">
           <div className="cycle-wrapper tesla-shadow">
             <div className="tesla-container">
-              <div><img src="/imgs/tesla-logo_black.svg" alt="tesla" /></div>
+              <div><Image src="/imgs/tesla-logo_black.svg" alt="tesla" width="80px" height="80px" /></div>
               <div>TSLA</div>
             </div>
           </div>
@@ -102,13 +102,13 @@ export default function Home() {
           <div className="cycle-wrapper-man">
             <div className="l-arrow">
               <div className="spinner" />
-              <img src="/imgs/right-sign.svg"  />
-            </div>
-            <img src="/imgs/man.svg" alt="tsla"  />
+                <img src="/imgs/right-sign.svg" alt="" width="14px" height="24px" />
+              </div>
+            <Image src="/imgs/man.svg" alt="tsla" width="39px" height="55px" />
             <div className="r-arrow">
               <div className="spinner right-sp" />
-              <img src="/imgs/right-sign.svg"  />
-            </div>
+                <img src="/imgs/right-sign.svg" alt="" width="14px" height="24px" />
+              </div>
           </div>
           <p className="our-pioneering">
             Our pioneering, supercharged oracle technology connects blockchain with the outside world in
@@ -119,7 +119,7 @@ export default function Home() {
         <div className="sync-item">
           <div className="cycle-wrapper dtsla-shadow">
             <div className="tesla-container">
-              <div><img src="/imgs/tesla-logo_white.svg" alt="tesla"  /></div>
+              <div><Image src="/imgs/tesla-logo_white.svg" alt="tesla" width="80px" height="80px" /></div>
               <div>dTSLA</div>
             </div>
           </div>
@@ -222,8 +222,8 @@ export default function Home() {
       </div>
     </div>
     <div className="echo-system">
-      <img className="desktop" src="/imgs/full-echo.svg?v=1.0" />
-      <img className="mobile" src="/imgs/min-echo.svg" />
+      <img className="desktop" alt="" src="/imgs/full-echo.svg?v=1.0" />
+      <img className="mobile" alt="" src="/imgs/min-echo.svg" />
     </div>
     <footer>
       <div className="container">

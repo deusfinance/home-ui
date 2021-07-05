@@ -53,7 +53,7 @@ const Navbar = () => {
             <Router>
                 <NavbarSideWrap className="deus-logo">
                     <ExternalLink href="https://deus.finance/" active={false}>
-                        <Image src="/imgs/navbar/deus-logo.svg" height="130%" width="130%"/>
+                        <Image src="/imgs/navbar/deus-logo.svg" alt="" height="130%" width="130%" />
                     </ExternalLink>
                     {tvl && <NavButton className="tvl" active={false} >
                         {t("tvl")} : {tvl}
@@ -69,7 +69,7 @@ const Navbar = () => {
                             } else {
                                 if (nav.image) {
                                     res = <ExternalLink href={nav.path} >
-                                        <Image src={`/imgs/navbar/${nav.id}.svg`} height="20%" width="20%" />
+                                        <Image src={`/imgs/navbar/${nav.id}.svg`} alt="" height="20%" width="20%" />
                                     </ExternalLink>
                                 } else {
                                     res = <ExternalLink href={nav.path} >
@@ -88,20 +88,20 @@ const Navbar = () => {
                                 <SubNavbarContentWrap>
                                     {nav.children.map(subnav => {
                                         if (subnav.path.charAt(0) === "/")
-                                            return <li><NavLink to={subnav.path} > {t(subnav.id)} </NavLink></li>
+                                            return <li key={subnav.id + "_desktop"}><NavLink to={subnav.path} > {t(subnav.id)} </NavLink></li>
                                         if (subnav.image) {
-                                            return <li><ExternalLink href={subnav.path} textDecoration="none">
-                                                <Image src={`/imgs/navbar/${subnav.id}.svg`} height="20%" width="20%" />
+                                            return <li key={subnav.id + "_desktop"}><ExternalLink href={subnav.path} textDecoration="none">
+                                                <Image src={`/imgs/navbar/${subnav.id}.svg`} alt="" height="20%" width="20%" />
                                             </ExternalLink></li>
                                         }
-                                        return <li><ExternalLink href={subnav.path} textDecoration="none">
+                                        return <li key={subnav.id + "_desktop"}><ExternalLink href={subnav.path} textDecoration="none">
                                             <span>{t(subnav.id)}</span>
                                         </ExternalLink></li>
                                     })}
                                 </SubNavbarContentWrap>
                             </>
                         }
-                        return <li>{res}</li>
+                        return <li key={nav.id + "_desktop"}>{res}</li>
                     })}
                     <li>
                         <LanguageSelector />
@@ -124,10 +124,10 @@ const Navbar = () => {
                                     let res = null
                                     if (nav.image) {
                                         res = <ExternalLink href={nav.path} >
-                                            <Image width='20px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} />
+                                            <Image width='20px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} alt="" />
                                         </ExternalLink>
                                     }
-                                    return <li className="nav-item-img">{res}</li>
+                                    return <li key={nav.id + "_mobile"} className="nav-item-img">{res}</li>
                                 })}
                             </div>}
 
@@ -154,8 +154,8 @@ const Navbar = () => {
                                     res = <> {res}
                                         {nav.children.map(subnav => {
                                             if (subnav.path.charAt(0) === "/")
-                                                return <li className="nav-item-box"><NavLink className="nav-item-text" to={subnav.path} > {t(subnav.id)} </NavLink></li>
-                                            return <li className="nav-item-box"><ExternalLink className="nav-item-text" href={subnav.path} textDecoration="none">
+                                                return <li key={subnav.id + "_mobile"} className="nav-item-box"><NavLink className="nav-item-text" to={subnav.path} > {t(subnav.id)} </NavLink></li>
+                                            return <li key={subnav.id + "_mobile"} className="nav-item-box"><ExternalLink className="nav-item-text" href={subnav.path} textDecoration="none">
                                                 <span>{t(subnav.id)}</span>
                                             </ExternalLink></li>
                                         })}

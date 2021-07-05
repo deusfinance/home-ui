@@ -1,4 +1,4 @@
-export default [
+const languages = [
     {
         name: "EN",
         value: "en"
@@ -12,3 +12,5 @@ export default [
         value: "ara"
     }
 ]
+
+export default languages;
