@@ -139,6 +139,10 @@ const Navbar = () => {
                                             <NavLink className="nav-item-text nav-item-ln" to={nav.path} >
                                                 {t(nav.id)}
                                             </NavLink> </li>
+                                    } else if (!nav.image) {
+                                        res = <div className="nav-item-box">
+                                            <li> <ExternalLink href={nav.path} className="nav-item-text" >{t(nav.id)}</ExternalLink> </li>
+                                        </div>
                                     }
                                 } else {
                                     res = <div className = "nav-item-wrap-img">
