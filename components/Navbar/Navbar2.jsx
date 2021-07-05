@@ -5,6 +5,7 @@ import { NavLink, StaticRouter as Router } from 'react-router-dom';
 import navs from './navs';
 import OutsideClickHandler from 'react-outside-click-handler';
 import LanguageSelector from './LanguageSelector';
+import Image from 'next/image'
 import {
     NavbarContentWrap,
     NavbarWrap,
@@ -52,7 +53,7 @@ const Navbar = () => {
             <Router>
                 <NavbarSideWrap className="deus-logo">
                     <ExternalLink href="https://deus.finance/" active={false}>
-                        <img src="/imgs/navbar/deus-logo.svg" />
+                        <img src="/imgs/navbar/deus-logo.svg" layout="fill"/>
                     </ExternalLink>
                     {tvl && <NavButton className="tvl" active={false} >
                         {t("tvl")} : {tvl}
@@ -68,7 +69,7 @@ const Navbar = () => {
                             } else {
                                 if (nav.image) {
                                     res = <ExternalLink href={nav.path} >
-                                        <img src={`/imgs/navbar/${nav.id}.svg`} />
+                                        <img src={`/imgs/navbar/${nav.id}.svg`}  />
                                     </ExternalLink>
                                 } else {
                                     res = <ExternalLink href={nav.path} >
@@ -83,14 +84,14 @@ const Navbar = () => {
                         if (nav.children) {
                             res = <>
                                 {res}
-                                <img className="polygon" src="/imgs/navbar/polygon.png" width="13px" alt="polygon" />
+                                <img className="polygon" src="/imgs/navbar/polygon.png" height="13px" width="13px" alt="polygon" />
                                 <SubNavbarContentWrap>
                                     {nav.children.map(subnav => {
                                         if (subnav.path.charAt(0) === "/")
                                             return <li><NavLink to={subnav.path} > {t(subnav.id)} </NavLink></li>
                                         if (subnav.image) {
                                             return <li><ExternalLink href={subnav.path} textDecoration="none">
-                                                <img src={`/imgs/navbar/${subnav.id}.svg`} />
+                                                <img src={`/imgs/navbar/${subnav.id}.svg`}  />
                                             </ExternalLink></li>
                                         }
                                         return <li><ExternalLink href={subnav.path} textDecoration="none">
@@ -123,7 +124,7 @@ const Navbar = () => {
                                     let res = null
                                     if (nav.image) {
                                         res = <ExternalLink href={nav.path} >
-                                            <img style={{width: '20px'}} src={`/imgs/navbar/${nav.id}.svg`} />
+                                            <img style={{ width: '20px' }} src={`/imgs/navbar/${nav.id}.svg`}   />
                                         </ExternalLink>
                                     }
                                     return <li className="nav-item-img">{res}</li>

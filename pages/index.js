@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar/Navbar2'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -10,16 +11,16 @@ export default function Home() {
       <div className="home-wrapper ">
         <div className="home-content">
           <div className="asset">
-            <img className="deus-dea-logo" src="imgs/deus-dea.svg" alt="deus-dea" />
+            <img className="deus-dea-logo" src="/imgs/deus-dea.svg" alt="deus-dea"  />
             <h1 className="tokenization">
-              <img className="deus-logo" src="./imgs/deus-finance.svg" alt="deus-logo" /> <br />
+              <img className="deus-logo" src="/imgs/deus-finance.svg" alt="deus-logo"  /> <br />
               UNLIMITED ACCESS TO GLOBAL MARKETS
             </h1>
             <h4 className="transpose">
               <span className="next-gen">
                 Transpose any digitally verifiable asset securely onto the blockchain.<br />
                 Trade real-world assets and derivatives on the blockchain without limits. 
-                <a className="learn-more" href="https://wiki.deus.finance" target="_blank"> Learn more </a>
+                <a className="learn-more" href="https://wiki.deus.finance" target="_blank" rel="noreferrer"> Learn more </a>
               </span>
               <br />
             </h4>
@@ -29,10 +30,10 @@ export default function Home() {
           </div>
         </div>
         <div className="btns-wrap">
-          <a className="buy-tokens " href="https://app.deus.finance/swap" target="_blank">
+          <a className="buy-tokens " href="https://app.deus.finance/swap" target="_blank" rel="noreferrer">
             BUY TOKENS
           </a>
-          <a className="work-btn-wrap " href="https://app.deus.finance/synchronizer/" target="_blank" style={{display: 'flex', justifyContent: 'center', marginLeft: 10}}>
+          <a className="work-btn-wrap " href="https://app.deus.finance/synchronizer/" target="_blank" rel="noreferrer" style={{display: 'flex', justifyContent: 'center', marginLeft: 10}}>
             <div className="work-btn"> start trading</div>
             <div style={{marginLeft: 8, marginTop: '-3px'}}>→</div>
           </a>
@@ -41,7 +42,7 @@ export default function Home() {
     </div>
     <div className="why-wrap">
       <div className="item">
-        <img src="imgs/deus-his.jpg" alt="WHY DEUS" />
+        <img src="/imgs/deus-his.jpg" alt="WHY DEUS"  />
       </div>
       <div className="item">
         <div className="why-about-deus">
@@ -88,7 +89,7 @@ export default function Home() {
         <div className="sync-item">
           <div className="cycle-wrapper tesla-shadow">
             <div className="tesla-container">
-              <div><img src="./imgs/tesla-logo_black.svg" alt="tesla" /></div>
+              <div><img src="/imgs/tesla-logo_black.svg" alt="tesla" /></div>
               <div>TSLA</div>
             </div>
           </div>
@@ -101,12 +102,12 @@ export default function Home() {
           <div className="cycle-wrapper-man">
             <div className="l-arrow">
               <div className="spinner" />
-              <img src="./imgs/right-sign.svg" />
+              <img src="/imgs/right-sign.svg"  />
             </div>
-            <img src="./imgs/man.svg" alt="tsla" />
+            <img src="/imgs/man.svg" alt="tsla"  />
             <div className="r-arrow">
               <div className="spinner right-sp" />
-              <img src="./imgs/right-sign.svg" />
+              <img src="/imgs/right-sign.svg"  />
             </div>
           </div>
           <p className="our-pioneering">
@@ -118,7 +119,7 @@ export default function Home() {
         <div className="sync-item">
           <div className="cycle-wrapper dtsla-shadow">
             <div className="tesla-container">
-              <div><img src="./imgs/tesla-logo_white.svg" alt="tesla" /></div>
+              <div><img src="/imgs/tesla-logo_white.svg" alt="tesla"  /></div>
               <div>dTSLA</div>
             </div>
           </div>
@@ -221,63 +222,63 @@ export default function Home() {
       </div>
     </div>
     <div className="echo-system">
-      <img className="desktop" src="./imgs/full-echo.svg?v=1.0" />
-      <img className="mobile" src="./imgs/min-echo.svg" />
+      <img className="desktop" src="/imgs/full-echo.svg?v=1.0" />
+      <img className="mobile" src="/imgs/min-echo.svg" />
     </div>
     <footer>
       <div className="container">
         <div className="group">
           <h4>APP </h4>
           <ul>
-            <li><a href="https://app.deus.finance/swap" target="_blank">SWAP</a></li>
-            <li><a href="https://app.deus.finance/stake-and-yield" target="_blank">STAKE &amp; YIELD (NEW)</a></li>
-            <li><a href="https://app.deus.finance/staking" target="_blank">STAKING (LEGACY)</a></li>
-            <li><a href="https://app.deus.finance/vaults" target="_blank">VAULTS (LEGACY)</a></li>
+            <li><a href="https://app.deus.finance/swap" target="_blank" rel="noreferrer">SWAP</a></li>
+            <li><a href="https://app.deus.finance/stake-and-yield" target="_blank" rel="noreferrer">STAKE &amp; YIELD (NEW)</a></li>
+            <li><a href="https://app.deus.finance/staking" target="_blank" rel="noreferrer">STAKING (LEGACY)</a></li>
+            <li><a href="https://app.deus.finance/vaults" target="_blank" rel="noreferrer">VAULTS (LEGACY)</a></li>
           </ul>
         </div>
         <div className="group">
           <h4>BUY REGISTRARS </h4>
           <ul>
-            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank">ETH</a>
+            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank" rel="noreferrer">ETH</a>
             </li>
-            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank">xDAI</a></li>
-            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank">BSC</a></li>
+            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank" rel="noreferrer">xDAI</a></li>
+            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank" rel="noreferrer">BSC</a></li>
           </ul>
         </div>
         <div className="group">
           <h4>FUTURES</h4>
           <ul>
-            <li><a href="https://app.deus.finance/bakkt" target="_blank">BAKKT</a></li>
-            <li><a href="https://app.deus.finance/musk" target="_blank">MUSK</a></li>
+            <li><a href="https://app.deus.finance/bakkt" target="_blank" rel="noreferrer">BAKKT</a></li>
+            <li><a href="https://app.deus.finance/musk" target="_blank" rel="noreferrer">MUSK</a></li>
           </ul>
         </div>
         <div className="group">
           <h4>RESOURCES</h4>
           <ul>
-            <li><a href="https://wiki.deus.finance" target="_blank">Wiki</a></li>
-            <li><a href="https://github.com/deusfinance" target="_blank">Github</a></li>
-            <li><a href="https://www.youtube.com/channel/UCEVRMEr1Kt-n6ycQSEYBScQ" target="_blank">Youtube</a>
+            <li><a href="https://wiki.deus.finance" target="_blank" rel="noreferrer">Wiki</a></li>
+            <li><a href="https://github.com/deusfinance" target="_blank" rel="noreferrer">Github</a></li>
+            <li><a href="https://www.youtube.com/channel/UCEVRMEr1Kt-n6ycQSEYBScQ" target="_blank" rel="noreferrer">Youtube</a>
             </li>
-            <li><a href="https://medium.com/@deusfinance" target="_blank">Medium</a></li>
-            <li><a href="https://www.twitch.tv/deus_finance" target="_blank">Twitch</a></li>
+            <li><a href="https://medium.com/@deusfinance" target="_blank" rel="noreferrer">Medium</a></li>
+            <li><a href="https://www.twitch.tv/deus_finance" target="_blank" rel="noreferrer">Twitch</a></li>
           </ul>
         </div>
         <div className="group">
           <h4>COMMUNITY</h4>
           <ul>
-            <li><a href="https://discord.com/invite/xfeYT6acha" target="_blank">Discord</a></li>
-            <li><a href="https://t.me/deusfinance" target="_blank">Telegram</a></li>
+            <li><a href="https://discord.com/invite/xfeYT6acha" target="_blank" rel="noreferrer">Discord</a></li>
+            <li><a href="https://t.me/deusfinance" target="_blank" rel="noreferrer">Telegram</a></li>
           </ul>
         </div>
         <div className="group">
           <h4>CONTRACTS</h4>
           <ul>
             <li>
-              <a href="https://etherscan.io/token/0x3b62f3820e0b035cc4ad602dece6d796bc325325" target="_blank">
+              <a href="https://etherscan.io/token/0x3b62f3820e0b035cc4ad602dece6d796bc325325" target="_blank" rel="noreferrer">
                 DEUS
               </a>
             </li>
-            <li><a href="https://etherscan.io/token/0x80ab141f324c3d6f2b18b030f1c4e95d4d658778" target="_blank">
+            <li><a href="https://etherscan.io/token/0x80ab141f324c3d6f2b18b030f1c4e95d4d658778" target="_blank" rel="noreferrer">
                 DEA
               </a>
             </li>
