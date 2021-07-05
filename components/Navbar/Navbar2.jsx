@@ -53,7 +53,7 @@ const Navbar = () => {
             <Router>
                 <NavbarSideWrap className="deus-logo">
                     <ExternalLink href="https://deus.finance/" active={false}>
-                        <img src="/imgs/navbar/deus-logo.svg" layout="fill"/>
+                        <Image src="/imgs/navbar/deus-logo.svg" height="130%" width="130%"/>
                     </ExternalLink>
                     {tvl && <NavButton className="tvl" active={false} >
                         {t("tvl")} : {tvl}
@@ -69,7 +69,7 @@ const Navbar = () => {
                             } else {
                                 if (nav.image) {
                                     res = <ExternalLink href={nav.path} >
-                                        <img src={`/imgs/navbar/${nav.id}.svg`}  />
+                                        <Image src={`/imgs/navbar/${nav.id}.svg`} height="20%" width="20%" />
                                     </ExternalLink>
                                 } else {
                                     res = <ExternalLink href={nav.path} >
@@ -91,7 +91,7 @@ const Navbar = () => {
                                             return <li><NavLink to={subnav.path} > {t(subnav.id)} </NavLink></li>
                                         if (subnav.image) {
                                             return <li><ExternalLink href={subnav.path} textDecoration="none">
-                                                <img src={`/imgs/navbar/${subnav.id}.svg`}  />
+                                                <Image src={`/imgs/navbar/${subnav.id}.svg`} height="20%" width="20%" />
                                             </ExternalLink></li>
                                         }
                                         return <li><ExternalLink href={subnav.path} textDecoration="none">
@@ -124,7 +124,7 @@ const Navbar = () => {
                                     let res = null
                                     if (nav.image) {
                                         res = <ExternalLink href={nav.path} >
-                                            <img style={{ width: '20px' }} src={`/imgs/navbar/${nav.id}.svg`}   />
+                                            <Image width='20px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} />
                                         </ExternalLink>
                                     }
                                     return <li className="nav-item-img">{res}</li>

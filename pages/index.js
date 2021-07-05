@@ -11,9 +11,10 @@ export default function Home() {
       <div className="home-wrapper ">
         <div className="home-content">
           <div className="asset">
-            <img className="deus-dea-logo" src="/imgs/deus-dea.svg" alt="deus-dea"  />
+            <Image className="deus-dea-logo" src="/imgs/deus-dea.svg" alt="deus-dea" height="85px" width="85px" />
             <h1 className="tokenization">
-              <img className="deus-logo" src="/imgs/deus-finance.svg" alt="deus-logo"  /> <br />
+              {/* maxheight="45px" maxwidth="70%" */}
+              <img className="deus-logo" src="/imgs/deus-finance.svg" alt="deus-logo" /> <br />
               UNLIMITED ACCESS TO GLOBAL MARKETS
             </h1>
             <h4 className="transpose">
