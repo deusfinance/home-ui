@@ -107,7 +107,7 @@ export default [{
     image: true,
     path: "https://t.me/deusfinance",
     children: [{
-        id: 'announcement',
+        id: 'Announcement',
         text: 'Announcement Channel',
         path: 'https://t.me/deusfinance_news',
       },
