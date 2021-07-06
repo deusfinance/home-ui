@@ -15,7 +15,7 @@ body {
   background: #a02e2e;
 }
 
-.polygon-Image-box {
+/* .polygon-Image-box {
   display: none !important;
 }
 
@@ -23,7 +23,7 @@ body {
   display: block;
   max-width: 13px;
   max-height: 13px;
-}
+} */
 
 .blured {
   top: 0;
@@ -1343,7 +1343,7 @@ html {
   }
   .home2 .sync-work-wrap .sync-item .cycle-wrapper-man .r-arrow img {
     top: 9.5px;
-    left: -60px;
+    left: -53px;
   }
   .home2 .sync-work-wrap .sync-item p {
     max-width: 350px;

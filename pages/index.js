@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar/Navbar2'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
       <div className="home-wrapper ">
         <div className="home-content">
           <div className="asset">
-            <Image className="deus-dea-logo" src="/imgs/deus-dea.svg" alt="deus-dea" height="85px" width="85px" />
+            <img className="deus-dea-logo" src="/imgs/deus-dea.svg" alt="deus-dea" height="85px" width="85px" />
             <h1 className="tokenization">
-              <Image className="deus-logo" src="/imgs/deus-finance.svg" alt="deus-logo" height="62px" width="363" maxwidth="90%" /> <br />
+              <img className="deus-logo" src="/imgs/deus-finance.svg" alt="deus-logo" height="62px" width="363" maxwidth="90%" /> <br />
               UNLIMITED ACCESS TO GLOBAL MARKETS
             </h1>
             <h4 className="transpose">
@@ -42,7 +42,7 @@ export default function Home() {
     </div>
     <div className="why-wrap">
       <div className="item">
-        <Image src="/imgs/deus-his.jpg" alt="WHY DEUS" width="892px" height="525px" maxwidth="100%"/>
+        <img src="/imgs/deus-his.jpg" alt="WHY DEUS" width="892px" height="525px" maxwidth="100%"/>
       </div>
       <div className="item">
         <div className="why-about-deus">
@@ -89,7 +89,7 @@ export default function Home() {
         <div className="sync-item">
           <div className="cycle-wrapper tesla-shadow">
             <div className="tesla-container">
-              <div><Image src="/imgs/tesla-logo_black.svg" alt="tesla" width="80px" height="80px" /></div>
+              <div><img src="/imgs/tesla-logo_black.svg" alt="tesla" width="80px" height="80px" /></div>
               <div>TSLA</div>
             </div>
           </div>
@@ -102,16 +102,18 @@ export default function Home() {
           <div className="cycle-wrapper-man">
             <div className="l-arrow">
               <div className="spinner" />
-                <div className="left-arrow-new">
-                  <Image src="/imgs/right-sign.svg" alt="arrow1" width="14px" height="24px" />
-                </div>
+                {/* <div className="left-arrow-new">
+                  <img src="/imgs/right-sign.svg" alt="arrow1" width="14px" height="24px" />
+                </div> */}
+                <img src="/imgs/right-sign.svg" alt="" />
               </div>
-            <Image src="/imgs/man.svg" alt="tsla" width="39px" height="55px" />
+            <img src="/imgs/man.svg" alt="tsla" width="39px" height="55px" />
             <div className="r-arrow">
               <div className="spinner right-sp" />
-                <div className="right-arrow-new">
-                  <Image src="/imgs/right-sign.svg" alt="arrow2" width="14px" height="24px" />
-                </div>
+                {/* <div className="right-arrow-new">
+                  <img src="/imgs/right-sign.svg" alt="arrow2" width="14px" height="24px" />
+                </div> */}
+                <img src="/imgs/right-sign.svg" alt="" />
               </div>
           </div>
           <p className="our-pioneering">
@@ -123,7 +125,7 @@ export default function Home() {
         <div className="sync-item">
           <div className="cycle-wrapper dtsla-shadow">
             <div className="tesla-container">
-              <div><Image src="/imgs/tesla-logo_white.svg" alt="tesla" width="80px" height="80px" /></div>
+              <div><img src="/imgs/tesla-logo_white.svg" alt="tesla" width="80px" height="80px" /></div>
               <div>dTSLA</div>
             </div>
           </div>
@@ -226,12 +228,14 @@ export default function Home() {
       </div>
     </div>
     <div className="echo-system">
-      <div className="desktop" style={{margin: '0 0 -220px 0'}} >
-        <Image alt="" src="/imgs/full-echo.svg?v=1.0" height="1000%" width="1000%" maxwidth="100%" maxheight="100%" />
+      {/* <div className="desktop" style={{margin: '0 0 -220px 0'}} >
+        <img alt="" src="/imgs/full-echo.svg?v=1.0" height="1000%" width="1000%" maxwidth="100%" maxheight="100%" />
       </div>
       <div className="mobile" style={{margin: '20px 0 -70px 0'}}>
-        <Image alt="" src="/imgs/min-echo.svg" height="3000%" width="1000%" />
-      </div>
+        <img alt="" src="/imgs/min-echo.svg" height="3000%" width="1000%" />
+      </div> */}
+      <img className="desktop" alt="" src="/imgs/full-echo.svg?v=1.0" />
+      <img className="mobile" alt="" src="/imgs/min-echo.svg" />
     </div>
     <footer>
       <div className="container">

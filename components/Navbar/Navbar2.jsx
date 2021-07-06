@@ -5,7 +5,7 @@ import { NavLink, StaticRouter as Router } from 'react-router-dom';
 import navs from './navs';
 import OutsideClickHandler from 'react-outside-click-handler';
 import LanguageSelector from './LanguageSelector';
-import Image from 'next/image'
+// import Image from 'next/image'
 import {
     NavbarContentWrap,
     NavbarWrap,
@@ -53,7 +53,8 @@ const Navbar = () => {
             <Router>
                 <NavbarSideWrap className="deus-logo">
                     <ExternalLink href="https://deus.finance/" active={false}>
-                        <Image src="/imgs/navbar/deus-logo.svg" alt="" height="130%" width="130%" />
+                        {/* height="130%" width="130%" */}
+                        <img src="/imgs/navbar/deus-logo.svg" alt="" />
                     </ExternalLink>
                     {tvl && <NavButton className="tvl" active={false} >
                         {t("tvl")} : {tvl}
@@ -69,7 +70,8 @@ const Navbar = () => {
                             } else {
                                 if (nav.image) {
                                     res = <ExternalLink href={nav.path} >
-                                        <Image src={`/imgs/navbar/${nav.id}.svg`} alt="" height="20%" width="20%" />
+                                        {/* height="20%" width="20%" */}
+                                        <img src={`/imgs/navbar/${nav.id}.svg`} alt="" />
                                     </ExternalLink>
                                 } else {
                                     res = <ExternalLink href={nav.path} >
@@ -84,16 +86,14 @@ const Navbar = () => {
                         if (nav.children) {
                             res = <>
                                 {res}
-                                <div className="polygon">
-                                    <Image src="/imgs/navbar/polygon.png" height="13px" width="13px" alt="polygon" />
-                                </div>
+                                <img className="polygon" src="/imgs/navbar/polygon.png" height="13px" width="13px" alt="polygon" />
                                 <SubNavbarContentWrap>
                                     {nav.children.map(subnav => {
                                         if (subnav.path.charAt(0) === "/")
                                             return <li key={subnav.id + "_desktop"}><NavLink to={subnav.path} > {t(subnav.id)} </NavLink></li>
                                         if (subnav.image) {
                                             return <li key={subnav.id + "_desktop"}><ExternalLink href={subnav.path} textDecoration="none">
-                                                <Image src={`/imgs/navbar/${subnav.id}.svg`} alt="" height="20%" width="20%" />
+                                                <img src={`/imgs/navbar/${subnav.id}.svg`} alt="" height="20%" width="20%" />
                                             </ExternalLink></li>
                                         }
                                         return <li key={subnav.id + "_desktop"}><ExternalLink href={subnav.path} textDecoration="none">
@@ -126,7 +126,7 @@ const Navbar = () => {
                                     let res = null
                                     if (nav.image) {
                                         res = <ExternalLink href={nav.path} >
-                                            <Image width='20px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} alt="" />
+                                            <img width='20px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} alt="" />
                                         </ExternalLink>
                                     }
                                     return <li key={nav.id + "_mobile"} className="nav-item-img">{res}</li>
