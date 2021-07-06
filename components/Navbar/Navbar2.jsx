@@ -5,7 +5,6 @@ import { NavLink, StaticRouter as Router } from 'react-router-dom';
 import navs from './navs';
 import OutsideClickHandler from 'react-outside-click-handler';
 import LanguageSelector from './LanguageSelector';
-// import Image from 'next/image'
 import {
     NavbarContentWrap,
     NavbarWrap,
@@ -14,6 +13,8 @@ import {
     SubNavbarContentWrap,
     NavbarMobileContent
 } from '../app-navbar/index';
+
+const navsMobile = navs.slice().reverse();
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -122,18 +123,18 @@ const Navbar = () => {
                             </li>
 
                             {<div className="nav-item-wrap-img">
-                                {navs.map(nav => {
+                                {navsMobile.map(nav => {
                                     let res = null
                                     if (nav.image) {
                                         res = <ExternalLink href={nav.path} >
                                             <img width='20px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} alt="" />
                                         </ExternalLink>
+                                        return <li key={nav.id + "_mobile"} className="nav-item-img">{res}</li>
                                     }
-                                    return <li key={nav.id + "_mobile"} className="nav-item-img">{res}</li>
                                 })}
                             </div>}
 
-                            {navs.map(nav => {
+                            {navsMobile.map(nav => {
                                 let res = null
                                 if (nav.path) {
                                     if (nav.path.charAt(0) === "/") {
@@ -165,7 +166,6 @@ const Navbar = () => {
                                 }
                                 return res
                             })}
-
                         </ul>
                     </NavbarMobileContent>
                 </OutsideClickHandler>
