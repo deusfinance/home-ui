@@ -102,12 +102,16 @@ export default function Home() {
           <div className="cycle-wrapper-man">
             <div className="l-arrow">
               <div className="spinner" />
-                <img src="/imgs/right-sign.svg" alt="" width="14px" height="24px" />
+                <div className="left-arrow-new">
+                  <Image src="/imgs/right-sign.svg" alt="arrow1" width="14px" height="24px" />
+                </div>
               </div>
             <Image src="/imgs/man.svg" alt="tsla" width="39px" height="55px" />
             <div className="r-arrow">
               <div className="spinner right-sp" />
-                <img src="/imgs/right-sign.svg" alt="" width="14px" height="24px" />
+                <div className="right-arrow-new">
+                  <Image src="/imgs/right-sign.svg" alt="arrow2" width="14px" height="24px" />
+                </div>
               </div>
           </div>
           <p className="our-pioneering">
@@ -222,8 +226,12 @@ export default function Home() {
       </div>
     </div>
     <div className="echo-system">
-      <img className="desktop" alt="" src="/imgs/full-echo.svg?v=1.0" />
-      <img className="mobile" alt="" src="/imgs/min-echo.svg" />
+      <div className="desktop" style={{margin: '0 0 -220px 0'}} >
+        <Image alt="" src="/imgs/full-echo.svg?v=1.0" height="1000%" width="1000%" maxwidth="100%" maxheight="100%" />
+      </div>
+      <div className="mobile" style={{margin: '20px 0 -70px 0'}}>
+        <Image alt="" src="/imgs/min-echo.svg" height="3000%" width="1000%" />
+      </div>
     </div>
     <footer>
       <div className="container">

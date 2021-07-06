@@ -84,7 +84,9 @@ const Navbar = () => {
                         if (nav.children) {
                             res = <>
                                 {res}
-                                <img className="polygon" src="/imgs/navbar/polygon.png" height="13px" width="13px" alt="polygon" />
+                                <div className="polygon">
+                                    <Image src="/imgs/navbar/polygon.png" height="13px" width="13px" alt="polygon" />
+                                </div>
                                 <SubNavbarContentWrap>
                                     {nav.children.map(subnav => {
                                         if (subnav.path.charAt(0) === "/")
