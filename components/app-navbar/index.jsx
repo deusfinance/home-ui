@@ -141,6 +141,8 @@ export const NavbarMobileContent = styled.div`
         }
         .nav-item-img{
             margin-left: 20px;
+            display: flex;
+            direction: column;
         }
         .nav-title{
             opacity: 0.5;

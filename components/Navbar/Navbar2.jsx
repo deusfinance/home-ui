@@ -123,11 +123,11 @@ const Navbar = () => {
                             </li>
 
                             {<div className="nav-item-wrap-img">
-                                {navsMobile.map(nav => {
+                                {navs.map(nav => {
                                     let res = null
                                     if (nav.image) {
                                         res = <ExternalLink href={nav.path} >
-                                            <img width='20px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} alt="" />
+                                            <img width='22px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} alt="" />
                                         </ExternalLink>
                                         return <li key={nav.id + "_mobile"} className="nav-item-img">{res}</li>
                                     }
