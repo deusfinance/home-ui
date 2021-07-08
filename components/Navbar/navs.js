@@ -1,71 +1,66 @@
-export default [{
+export const defaultNavbar = [
+  {
     id: "app",
     text: 'APP',
     children: [{
-        id: 'Muon Presale'.toUpperCase(),
-        text: 'muon presale',
-        path: 'https://app.deus.finance/muon-presale',
-        exact: true
-      },
-      {
-        id: 'Stake And Yeild'.toUpperCase(),
-        text: 'STAKE & YIELD',
-        path: 'https://app.deus.finance/stake-and-yield',
-        exact: true
-      },
-      {
-        id: 'sealed Swap'.toUpperCase(),
-        text: 'sealed swap',
-        path: 'https://app.deus.finance/sealed-swap',
-        exact: true
-      },
-      {
-        id: 'vaultsL',
-        text: 'VAULTS (LEGACY)',
-        path: 'https://app.deus.finance/vaults',
-        exact: true
-      },
-      {
-        id: 'STAKING (LEGACY)',
-        text: 'STAKING (LEGACY)',
-        path: 'https://app.deus.finance/staking',
-      }
+      id: 'Muon Presale'.toUpperCase(),
+      text: 'muon presale',
+      path: '/muon-presale',
+      exact: true
+    },
+    {
+      id: 'Stake And YIELD'.toUpperCase(),
+      text: 'STAKE & YIELD',
+      path: '/stake-and-yield',
+      exact: true
+    },
+    {
+      id: 'sealed Swap'.toUpperCase(),
+      text: 'sealed swap',
+      path: '/sealed-swap',
+      exact: true
+    },
+    {
+      id: 'vaultsL',
+      text: 'VAULTS (LEGACY)',
+      path: '/vaults',
+      exact: true
+    },
+    {
+      id: 'STAKING (LEGACY)',
+      text: 'STAKING (LEGACY)',
+      path: '/staking',
+    }
     ]
   },
   {
     id: 'synthetics',
     text: 'SYNTHETICS',
     children: [{
-        id: 'ETH',
-        text: 'ETH',
-        path: 'https://app.deus.finance/synchronizer',
-        exact: true
-      },
-      {
-        id: 'xDai',
-        text: 'xDAI',
-        path: 'https://app.deus.finance/crosschain/xdai/synchronizer',
-        exact: true
-      },
-      {
-        id: 'bsc',
-        text: 'BSC',
-        path: 'https://app.deus.finance/crosschain/bsc/synchronizer',
-        exact: true
-      },
-      {
-        id: 'heco',
-        text: 'HECO',
-        path: 'https://app.deus.finance/crosschain/heco/synchronizer',
-        exact: true
-      },
+      id: 'ETH',
+      text: 'ETH',
+      path: '/synchronizer',
+      exact: true
+    },
+    {
+      id: 'xDai',
+      text: 'xDAI',
+      path: '/crosschain/xdai/synchronizer',
+      exact: true
+    },
+    {
+      id: 'bsc',
+      text: 'BSC',
+      path: '/crosschain/bsc/synchronizer',
+      exact: true
+    },
+    {
+      id: 'heco',
+      text: 'HECO',
+      path: '/crosschain/heco/synchronizer',
+      exact: true
+    },
     ]
-  },
-  {
-    id: 'swap',
-    text: 'SWAP',
-    path: 'https://app.deus.finance/swap',
-    exact: true,
   },
   {
     id: 'tools',
@@ -100,22 +95,22 @@ export default [{
       id: 'deusWiki',
       text: 'DEUS wiki',
       path: 'https://wiki.deus.finance/docs',
-    }, ]
+    },]
   },
   {
     id: "telegram",
     image: true,
     path: "https://t.me/deusfinance",
     children: [{
-        id: 'Announcement',
-        text: 'Announcement Channel',
-        path: 'https://t.me/deusfinance_news',
-      },
-      {
-        id: 'Community',
-        text: 'Community Channel',
-        path: 'https://t.me/deusfinance',
-      },
+      id: 'Announcement',
+      text: 'Announcement Channel',
+      path: 'https://t.me/deusfinance_news',
+    },
+    {
+      id: 'Community',
+      text: 'Community Channel',
+      path: 'https://t.me/deusfinance',
+    },
     ]
   },
   {
@@ -128,4 +123,27 @@ export default [{
     image: true,
     path: "https://discord.com/invite/xfeYT6acha"
   },
-].reverse()
+]
+
+export const desktopNavs = [
+  ...defaultNavbar.slice(0, 2),
+  {
+    id: 'swap',
+    text: 'SWAP',
+    path: '/swap',
+    exact: true,
+  },
+  ...defaultNavbar.slice(2)].reverse()
+
+
+let { children } = defaultNavbar[0]
+defaultNavbar[0] = {
+  ...defaultNavbar[0], children: [{
+    id: 'swap',
+    text: 'SWAP',
+    path: '/swap',
+    exact: true,
+  }, ...children]
+}
+
+export const mobileNavs = defaultNavbar

@@ -1,9 +1,11 @@
-import Navbar from '../components/Navbar/Navbar2'
+import Navbar from '../components/Navbar/Navbar'
 
 export default function Home() {
+  const baseURL = "https://app.deus.finance"
+  
   return (
   <div>
-    <Navbar />
+    <Navbar baseURL={baseURL} />
     <div id="blur-pop"></div>
 
     <div style={{width: '100%', borderBottom: '2px solid #242424', position: 'relative'}}>
@@ -29,10 +31,10 @@ export default function Home() {
           </div>
         </div>
         <div className="btns-wrap">
-          <a className="buy-tokens " href="https://app.deus.finance/swap" target="_blank" rel="noreferrer">
+          <a className="buy-tokens " href={baseURL + "/swap"} target="_blank" rel="noreferrer">
             BUY TOKENS
           </a>
-          <a className="work-btn-wrap " href="https://app.deus.finance/synchronizer/" target="_blank" rel="noreferrer" style={{display: 'flex', justifyContent: 'center', marginLeft: 10}}>
+          <a className="work-btn-wrap " href={baseURL + "/synchronizer/"} target="_blank" rel="noreferrer" style={{display: 'flex', justifyContent: 'center', marginLeft: 10}}>
             <div className="work-btn"> start trading</div>
             <div style={{marginLeft: 8, marginTop: '-3px'}}>→</div>
           </a>
@@ -133,7 +135,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <a className="m-auto work-btn-wrap " href="https://app.deus.finance/synchronizer/" style={{display: 'flex', justifyContent: 'center'}}>
+      <a className="m-auto work-btn-wrap " href={baseURL + "/synchronizer/"} style={{display: 'flex', justifyContent: 'center'}}>
         <div className="work-btn" style={{textTransform: 'uppercase'}}>Start trading</div>
         <div style={{marginLeft: 5, marginTop: '-3px'}}>→</div>
       </a>
@@ -241,26 +243,26 @@ export default function Home() {
         <div className="group">
           <h4>APP </h4>
           <ul>
-            <li><a href="https://app.deus.finance/swap" target="_blank" rel="noreferrer">SWAP</a></li>
-            <li><a href="https://app.deus.finance/stake-and-yield" target="_blank" rel="noreferrer">STAKE &amp; YIELD (NEW)</a></li>
-            <li><a href="https://app.deus.finance/staking" target="_blank" rel="noreferrer">STAKING (LEGACY)</a></li>
-            <li><a href="https://app.deus.finance/vaults" target="_blank" rel="noreferrer">VAULTS (LEGACY)</a></li>
+            <li><a href={baseURL + "/swap"} target="_blank" rel="noreferrer">SWAP</a></li>
+            <li><a href={baseURL + "/stake-and-yield"} target="_blank" rel="noreferrer">STAKE &amp; YIELD (NEW)</a></li>
+            <li><a href={baseURL + "/staking"} target="_blank" rel="noreferrer">STAKING (LEGACY)</a></li>
+            <li><a href={baseURL + "/vaults"} target="_blank" rel="noreferrer">VAULTS (LEGACY)</a></li>
           </ul>
         </div>
         <div className="group">
           <h4>BUY REGISTRARS </h4>
           <ul>
-            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank" rel="noreferrer">ETH</a>
+            <li><a href={baseURL + "/crosschain/xdai/synchronizer/"} target="_blank" rel="noreferrer">ETH</a>
             </li>
-            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank" rel="noreferrer">xDAI</a></li>
-            <li><a href="https://app.deus.finance/crosschain/xdai/synchronizer/" target="_blank" rel="noreferrer">BSC</a></li>
+            <li><a href={baseURL + "/crosschain/xdai/synchronizer/"} target="_blank" rel="noreferrer">xDAI</a></li>
+            <li><a href={baseURL + "/crosschain/xdai/synchronizer/"} target="_blank" rel="noreferrer">BSC</a></li>
           </ul>
         </div>
         <div className="group">
           <h4>FUTURES</h4>
           <ul>
-            <li><a href="https://app.deus.finance/bakkt" target="_blank" rel="noreferrer">BAKKT</a></li>
-            <li><a href="https://app.deus.finance/musk" target="_blank" rel="noreferrer">MUSK</a></li>
+            <li><a href={baseURL + "/bakkt"} target="_blank" rel="noreferrer">BAKKT</a></li>
+            <li><a href={baseURL + "/musk"} target="_blank" rel="noreferrer">MUSK</a></li>
           </ul>
         </div>
         <div className="group">
