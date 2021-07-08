@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar/Navbar'
 
 export default function Home() {
   const baseURL = "https://app.deus.finance"
+  const deusWiki = "https://wiki.deus.finance"
   
   return (
   <div>
@@ -21,7 +22,7 @@ export default function Home() {
               <span className="next-gen">
                 Transpose any digitally verifiable asset securely onto the blockchain.<br />
                 Trade real-world assets and derivatives on the blockchain without limits. 
-                <a className="learn-more" href="https://wiki.deus.finance" target="_blank" rel="noreferrer"> Learn more </a>
+                <a className="learn-more" href={deusWiki} target="_blank" rel="noreferrer"> Learn more </a>
               </span>
               <br />
             </h4>
@@ -81,7 +82,7 @@ export default function Home() {
           restrictions.
           DEUS aims to become chain-agnostic and is about to launch on BSC, with Avax and others soon to follow.
         </p>
-        <a className="learn-wiki" href="https://wiki.deus.finance/docs/dAssets">
+        <a className="learn-wiki" href={deusWiki + "/docs/dAssets"}>
           <p>Learn more on our wiki</p>
           <p>→</p>
         </a>
@@ -170,7 +171,7 @@ export default function Home() {
                 on our DEUS Swap market
                 maker, thus allowing for an optimal demand &amp; supply ratio without a finite market cap.
                 The price of DEUS is determined by a bonding curve, thus making DEUS a less volatile token.
-                <a className="learn-wiki" href="https://wiki.deus.finance/docs/deus">
+                <a className="learn-wiki" href={deusWiki + "/docs/deus"}>
                   <p>Learn more on our wiki</p>
                   <p>→</p>
                 </a>
@@ -201,7 +202,7 @@ export default function Home() {
                 It’s a much more volatile
                 token with a <span className="grad1">finite supply of 166,670</span> tokens. No more DEA will
                 ever be minted.
-                <a className="learn-wiki" href="https://wiki.deus.finance/docs/dea">
+                <a className="learn-wiki" href={deusWiki + "/docs/dea"}>
                   <p>Learn more on our wiki</p>
                   <p>→</p>
                 </a>
@@ -222,7 +223,7 @@ export default function Home() {
           <br />
           DEA serves as a gateway in and out of Vaults, whilst DEUS Treasury works as an Insurance Fund.
         </p>
-        <a className="learn-wiki" href="https://wiki.deus.finance/docs">
+        <a className="learn-wiki" href={deusWiki + "/docs"}>
           <p>Learn more on our wiki</p>
           <p>→</p>
         </a>
@@ -268,7 +269,7 @@ export default function Home() {
         <div className="group">
           <h4>RESOURCES</h4>
           <ul>
-            <li><a href="https://wiki.deus.finance" target="_blank" rel="noreferrer">Wiki</a></li>
+            <li><a href={deusWiki} target="_blank" rel="noreferrer">Wiki</a></li>
             <li><a href="https://github.com/deusfinance" target="_blank" rel="noreferrer">Github</a></li>
             <li><a href="https://www.youtube.com/channel/UCEVRMEr1Kt-n6ycQSEYBScQ" target="_blank" rel="noreferrer">Youtube</a>
             </li>
