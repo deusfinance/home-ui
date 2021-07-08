@@ -141,8 +141,6 @@ export const NavbarMobileContent = styled.div`
         }
         .nav-item-img{
             margin-left: 20px;
-            display: flex;
-            direction: column;
         }
         .nav-title{
             opacity: 0.5;
@@ -160,8 +158,8 @@ export const NavbarMobileContent = styled.div`
         .nav-item-box {
             margin-bottom: 10px;
             &:hover{
-                color:#000000;
-                background: #fff;
+                background:#0a0a0acf;
+                color:#ffffff;
             }
         }
         .nav-item-ln {
@@ -267,6 +265,15 @@ export const NavbarContentWrap = styled.ul`
             right: 15px;
             top: 46px;
         }
+        .lang-warp{
+               .active{
+                color :#ffffff;
+            }
+        }
+        .active{
+                /* color :rgb(0, 153, 255); */
+                color:#b6e693;
+        }
         &:hover{
             >a,p,svg{
                 filter:brightness(0.8)
@@ -302,14 +309,12 @@ export const SubNavbarContentWrap = styled.ul`
             padding-left: 18px;
         }
         &:hover{
-            background:#0a0a0acf;
             a{
-                color:#ffffff;
+                color :rgb(0, 153, 255);
             }
         }
         .active{
-            color:#ffffff;
-            background:#0a0a0acf;
+            color :rgb(0, 153, 255);
         }
     }
     position: absolute;
