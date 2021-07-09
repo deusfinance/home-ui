@@ -50,7 +50,7 @@ export const NavbarWrap = styled(RowBetween)`
     position: relative;
     height: 55px;
     font-size: 16px;
-    font-weight:300;
+    font-weight: 300;
     border-bottom: 1px solid #1C1C1C;
     padding: 0 5px;
     background: ${({ theme }) => theme.bg1};
