@@ -122,46 +122,46 @@ const Navbar = (props) => {
                             </li>
 
                             {<div className="nav-item-wrap-img">
-                                {desktopNavs.map(nav => {
+                                {desktopNavs.map((nav, index) => {
                                     let res = null
                                     if (nav.image) {
                                         res = <ExternalLink href={nav.path} >
                                             <img width='22px' height="20px" src={`/imgs/navbar/${nav.id}.svg`} alt="" />
                                         </ExternalLink>
-                                        return <li key={nav.id + "_mobile"} className="nav-item-img">{res}</li>
+                                        return <li key={nav.id + "_mobile" + index} className="nav-item-img">{res}</li>
                                     }
                                 })}
                             </div>}
 
-                            {mobileNavs.map(nav => {
+                            {mobileNavs.map((nav, index) => {
                                 let res = null
                                 if (nav.path) {
                                     if (nav.path.charAt(0) === "/") {
-                                        res = <li className="nav-item-box">
+                                        res = <li key={index} className="nav-item-box">
                                             <ExternalLink className="nav-item-text nav-item-ln" href={baseURL + nav.path} >
                                                 {t(nav.id)}
                                             </ExternalLink> </li>
                                     } else if (!nav.image) {
-                                        res = <div className="nav-item-box">
+                                        res = <div key={index} className="nav-item-box">
                                             <li> <ExternalLink href={nav.path} className="nav-item-text" >{t(nav.id)}</ExternalLink> </li>
                                         </div>
                                     }
                                 } else {
-                                    res = <div className = "nav-item-wrap-img">
+                                    res = <div key={index} className = "nav-item-wrap-img">
                                         <li> <p className="nav-title">{t(nav.id)}</p> </li>
                                         </div>
                                 }
 
                                 if (nav.children && !nav.image) {
-                                    res = <> {res}
-                                        {nav.children.map(subnav => {
+                                    res = <div key={index} > {res}
+                                        {nav.children.map((subnav, index) => {
                                             if (subnav.path.charAt(0) === "/")
-                                                return <li key={subnav.id + "_mobile"} className="nav-item-box"><ExternalLink className="nav-item-text" href={baseURL + subnav.path} > {t(subnav.id)} </ExternalLink></li>
-                                            return <li key={subnav.id + "_mobile"} className="nav-item-box"><ExternalLink className="nav-item-text" href={subnav.path} textDecoration="none">
+                                                return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text" href={baseURL + subnav.path} > {t(subnav.id)} </ExternalLink></li>
+                                            return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text" href={subnav.path} textDecoration="none">
                                                 <span>{t(subnav.id)}</span>
                                             </ExternalLink></li>
                                         })}
-                                    </>
+                                    </div>
                                 }
                                 return res
                             })}
