@@ -1,6 +1,6 @@
-import { useEffect, Suspense } from 'react';
-import { LoopCircleLoading } from 'react-loadingg'
-import Router, { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Head from 'next/head'
 import * as gtag from '../utils/gtag';
 import '../public/styles/globals.css'
 import ThemeProvider from '../public/theme'
@@ -10,14 +10,6 @@ import '../public/styles/navbar.css';
 import '../public/styles/index.css';
 import '../public/styles/footer.css';
 import '../public/styles/base.css';
-import Head from 'next/head'
-// import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import NProgress from 'nprogress';
-import 'nprogress/nprogress.css';
-
-Router.events.on('routeChangeStart', () => NProgress.start());
-Router.events.on('routeChangeComplete', () => NProgress.done());
-Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()

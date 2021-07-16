@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ExternalLink } from '../Link';
-import { NavLink, StaticRouter as Router } from 'react-router-dom';
+import { StaticRouter as Router } from 'react-router-dom';
 import { desktopNavs, mobileNavs } from './navs';
 import OutsideClickHandler from 'react-outside-click-handler';
 import LanguageSelector from './LanguageSelector';
@@ -15,10 +15,9 @@ import {
 } from '../app-navbar/index';
 
 const Navbar = (props) => {
-    const baseURL = props.baseURL
-    const [open, setOpen] = useState(false)
     const [tvl, setTvl] = useState(null)
     const { t } = useTranslation()
+    const { open, setOpen, baseURL } = props
 
     useEffect(() => {
         const getTVL = async () => {
@@ -40,20 +39,11 @@ const Navbar = (props) => {
         getTVL()
     }, [])
 
-    useEffect(() => {
-        const blurPop = "blurred"
-        if (typeof document === undefined) return
-        const divClass = document.getElementById("blur-pop").classList;
-        if (!open) divClass.remove(blurPop);
-        else divClass.add(blurPop);
-    }, [open])
-
     return (<>
         <NavbarWrap>
             <Router>
                 <NavbarSideWrap className="deus-logo">
                     <ExternalLink href="https://deus.finance/" active={false}>
-                        {/* height="130%" width="130%" */}
                         <img src="/imgs/navbar/deus-logo.svg" alt="" />
                     </ExternalLink>
                     {tvl && <NavButton className="tvl" active={false} >
@@ -70,7 +60,6 @@ const Navbar = (props) => {
                             } else {
                                 if (nav.image) {
                                     res = <ExternalLink href={nav.path} >
-                                        {/* height="20%" width="20%" */}
                                         <img src={`/imgs/navbar/${nav.id}.svg`} alt="" />
                                     </ExternalLink>
                                 } else {
