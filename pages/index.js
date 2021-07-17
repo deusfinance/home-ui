@@ -4,16 +4,10 @@ import dynamic from 'next/dynamic'
 const Loading = () => <LoopCircleLoading />
 Loading.displayName = "Loading"
 
-const Main = dynamic(
-  () => import('../components/Main'), 
-  {loading : Loading , ssr: false})
+const Main = dynamic(() => import('../components/Main'), {loading : Loading , ssr: false})
 
-const Home = function Home() {
+export default function Home() {
   return (
-    <div>
       <Main />
-    </div>
   )
 }
-
-export default Home
