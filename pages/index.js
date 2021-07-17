@@ -1,10 +1,19 @@
 import { LoopCircleLoading } from 'react-loadingg'
 import dynamic from 'next/dynamic'
 
-const Main = dynamic(() => import('../components/Main'), {loading: () => <LoopCircleLoading />, ssr: false})
+const Loading = () => <LoopCircleLoading />
+Loading.displayName = "Loading"
 
-export default function Home() {
+const Main = dynamic(
+  () => import('../components/Main'), 
+  {loading : Loading , ssr: false})
+
+const Home = function Home() {
   return (
+    <div>
       <Main />
+    </div>
   )
 }
+
+export default Home

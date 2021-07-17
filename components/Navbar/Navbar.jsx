@@ -37,7 +37,7 @@ const Navbar = (props) => {
             }
         }
         getTVL()
-    }, [])
+    }, [baseURL])
 
     return (<>
         <NavbarWrap>
