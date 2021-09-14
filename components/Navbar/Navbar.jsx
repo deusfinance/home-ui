@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ExternalLink } from '../Link';
 import { StaticRouter as Router } from 'react-router-dom';
-import { desktopNavs, mobileNavs } from './navs';
+// import { desktopNavs, mobileNavs } from './navs';
 import OutsideClickHandler from 'react-outside-click-handler';
 import LanguageSelector from './LanguageSelector';
 import {
@@ -18,6 +18,49 @@ const Navbar = (props) => {
     const [tvl, setTvl] = useState(null)
     const { t } = useTranslation()
     const { open, setOpen, baseURL } = props
+    const [desktopNavs, setDesktopNavs] = useState([])
+    const [mobileNavs, setMobileNavs] = useState([])
+
+    useEffect(() => {
+        const getNavs = async () => {
+            try {
+                fetch('https://raw.githubusercontent.com/deusfinance/app-ui/main/src/config/routes.json')
+                    .then((response) => response.json())
+                    .then((routes) => {
+                        const desktopNavs = [
+                            ...routes.slice(0, 2),
+                            {
+                                id: 'swap',
+                                text: 'SWAP',
+                                path: '/swap',
+                                exact: true,
+                            },
+                            ...routes.slice(2)].reverse()
+
+                        let { children } = routes[0]
+                        if (children && children[0].id !== "swap")
+                            routes[0] = {
+                                ...routes[0],
+                                children: [{
+                                    id: 'swap',
+                                    text: 'SWAP',
+                                    path: '/swap',
+                                    exact: true,
+                                }, ...children]
+                            }
+                        const navsMobile = routes.reverse()
+                        setDesktopNavs( desktopNavs );
+                        setMobileNavs( navsMobile );
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                    })
+            } catch (error) {
+                console.log("fetch " + url + " had some error", error);
+            }
+        }
+        getNavs()
+    }, [])
 
     useEffect(() => {
         const getTVL = async () => {
