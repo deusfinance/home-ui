@@ -77,16 +77,16 @@ export const defaultNavbar = [
         text: 'DEUS android',
         path: 'https://play.google.com/store/apps/details?id=finance.deus.deus_mobile&hl=en_US',
       },
-      {
-        id: 'simulator',
-        text: 'DEUS simulator',
-        path: 'https://simulate.deus.finance',
-      },
-      {
-        id: 'tradingview',
-        text: 'DEUS tradingview',
-        path: 'https://chart.deus.finance',
-      },
+      // {
+      //   id: 'simulator',
+      //   text: 'DEUS simulator',
+      //   path: 'https://simulate.deus.finance',
+      // },
+      // {
+      //   id: 'tradingview',
+      //   text: 'DEUS tradingview',
+      //   path: 'https://chart.deus.finance',
+      // },
       {
         id: 'vote',
         text: 'DEUS vote',
@@ -94,15 +94,15 @@ export const defaultNavbar = [
       }
     ]
   },
-  {
-    id: 'learn',
-    text: 'LEARN',
-    children: [{
-      id: 'deusWiki',
-      text: 'DEUS wiki',
-      path: 'https://wiki.deus.finance/docs',
-    },]
-  },
+  // {
+  //   id: 'learn',
+  //   text: 'LEARN',
+  //   children: [{
+  //     id: 'deusWiki',
+  //     text: 'DEUS wiki',
+  //     path: 'https://wiki.deus.finance/docs',
+  //   },]
+  // },
   {
     id: "telegram",
     image: true,

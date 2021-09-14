@@ -259,7 +259,7 @@ export default function Main() {
           <div className="group">
             <h4>RESOURCES</h4>
             <ul>
-              <li><a href={deusWiki} target="_blank" rel="noreferrer">Wiki</a></li>
+              {/* <li><a href={deusWiki} target="_blank" rel="noreferrer">Wiki</a></li> */}
               <li><a href="https://github.com/deusfinance" target="_blank" rel="noreferrer">Github</a></li>
               <li><a href="https://www.youtube.com/channel/UCEVRMEr1Kt-n6ycQSEYBScQ" target="_blank" rel="noreferrer">Youtube</a>
               </li>
