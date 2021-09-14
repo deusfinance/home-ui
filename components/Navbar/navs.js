@@ -87,11 +87,11 @@ export const defaultNavbar = [
       //   text: 'DEUS tradingview',
       //   path: 'https://chart.deus.finance',
       // },
-      {
-        id: 'vote',
-        text: 'DEUS vote',
-        path: 'https://vote.deus.finance',
-      }
+      // {
+      //   id: 'vote',
+      //   text: 'DEUS vote',
+      //   path: 'https://vote.deus.finance',
+      // }
     ]
   },
   // {
