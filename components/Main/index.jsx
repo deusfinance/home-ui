@@ -263,7 +263,7 @@ export default function Main() {
               <li><a href="https://github.com/deusfinance" target="_blank" rel="noreferrer">Github</a></li>
               <li><a href="https://www.youtube.com/channel/UCEVRMEr1Kt-n6ycQSEYBScQ" target="_blank" rel="noreferrer">Youtube</a>
               </li>
-              <li><a href="https://medium.com/@deusfinance" target="_blank" rel="noreferrer">Medium</a></li>
+              <li><a href="https://medium.com/deus-finance" target="_blank" rel="noreferrer">Medium</a></li>
               <li><a href="https://www.twitch.tv/deus_finance" target="_blank" rel="noreferrer">Twitch</a></li>
             </ul>
           </div>
