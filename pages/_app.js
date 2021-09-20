@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
           <title>DEUS finance</title>
           <meta name="description" content="DEUS FINANCE UNLIMITED ACCESS TO GLOBAL MARKETS transpose any digitally verifiable asset securely onto the blockchain. DEUS lets you trade real-world assets and derivatives, like stocks and commodities, directly on the Ethereum blockchain." />
-          <meta data-react-helmet="true" property="og:image" content="https://wiki.deus.finance/imgs/deus.png" />
+          <meta data-react-helmet="true" property="og:image" content="https://wiki.deus.finance/img/deus.png" />
           <meta name="keywords" content="deus,dea" />
           <meta name="author" content="deus finance" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />

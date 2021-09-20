@@ -7,10 +7,10 @@ const languages = [
         name: "CN",
         value: "cn"
     },
-    {
-        name: "ARA",
-        value: "ara"
-    }
+    // {
+    //     name: "ARA",
+    //     value: "ara"
+    // }
 ]
 
 export default languages;

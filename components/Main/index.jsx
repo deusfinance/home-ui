@@ -15,9 +15,9 @@ export default function Main() {
         <div className="home-wrapper ">
           <div className="home-content">
             <div className="asset">
-              <img className="deus-dea-logo" src="/imgs/deus-dea.svg" alt="deus-dea" height="85px" width="85px" />
+              <img className="deus-dea-logo" src="/img/deus-dea.svg" alt="deus-dea" height="85px" width="85px" />
               <h1 className="tokenization">
-                <img className="deus-logo" src="/imgs/deus-finance.svg" alt="deus-logo" height="62px" width="363" maxwidth="90%" /> <br />
+                <img className="deus-logo" src="/img/deus-finance.svg" alt="deus-logo" height="62px" width="363" maxwidth="90%" /> <br />
                 UNLIMITED ACCESS TO GLOBAL MARKETS
               </h1>
               <h4 className="transpose">
@@ -30,7 +30,7 @@ export default function Main() {
               </h4>
             </div>
             <div className="gif-wrapper">
-              <video className="gif" id="gif" src="./imgs/mp4/10.mp4" autoPlay loop muted> </video>
+              <video className="gif" id="gif" src="./img/mp4/10.mp4" autoPlay loop muted> </video>
             </div>
           </div>
           <div className="btns-wrap">
@@ -46,7 +46,7 @@ export default function Main() {
       </div>
       <div className="why-wrap">
         <div className="item">
-          <img src="/imgs/deus-his.jpg" alt="WHY DEUS" width="892px" height="525px" maxwidth="100%"/>
+          <img src="/img/deus-his.jpg" alt="WHY DEUS" width="892px" height="525px" maxwidth="100%"/>
         </div>
         <div className="item">
           <div className="why-about-deus">
@@ -93,7 +93,7 @@ export default function Main() {
           <div className="sync-item">
             <div className="cycle-wrapper tesla-shadow">
               <div className="tesla-container">
-                <div><img src="/imgs/tesla-logo_black.svg" alt="tesla" width="80px" height="80px" /></div>
+                <div><img src="/img/tesla-logo_black.svg" alt="tesla" width="80px" height="80px" /></div>
                 <div>TSLA</div>
               </div>
             </div>
@@ -106,12 +106,12 @@ export default function Main() {
             <div className="cycle-wrapper-man">
               <div className="l-arrow">
                 <div className="spinner" />
-                  <img src="/imgs/right-sign.svg" alt="" />
+                  <img src="/img/right-sign.svg" alt="" />
                 </div>
-              <img src="/imgs/man.svg" alt="tsla" width="39px" height="55px" />
+              <img src="/img/man.svg" alt="tsla" width="39px" height="55px" />
               <div className="r-arrow">
                 <div className="spinner right-sp" />
-                  <img src="/imgs/right-sign.svg" alt="" />
+                  <img src="/img/right-sign.svg" alt="" />
                 </div>
             </div>
             <p className="our-pioneering">
@@ -123,7 +123,7 @@ export default function Main() {
           <div className="sync-item">
             <div className="cycle-wrapper dtsla-shadow">
               <div className="tesla-container">
-                <div><img src="/imgs/tesla-logo_white.svg" alt="tesla" width="80px" height="80px" /></div>
+                <div><img src="/img/tesla-logo_white.svg" alt="tesla" width="80px" height="80px" /></div>
                 <div>dTSLA</div>
               </div>
             </div>
@@ -226,8 +226,8 @@ export default function Main() {
         </div>
       </div>
       <div className="echo-system">
-        <img className="desktop" alt="" src="/imgs/full-echo.svg?v=1.0" />
-        <img className="mobile" alt="" src="/imgs/min-echo.svg" />
+        <img className="desktop" alt="" src="/img/full-echo.svg?v=1.0" />
+        <img className="mobile" alt="" src="/img/min-echo.svg" />
       </div>
       <footer>
         <div className="container">

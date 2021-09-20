@@ -24,33 +24,33 @@ const Navbar = (props) => {
     useEffect(() => {
         const getNavs = async () => {
             try {
-                fetch('https://raw.githubusercontent.com/deusfinance/app-ui/main/src/config/routes.json')
+                fetch('https://raw.githubusercontent.com/deusfinance/app-ui/dei/src/config/routes.json')
                     .then((response) => response.json())
                     .then((routes) => {
-                        const desktopNavs = [
-                            ...routes.slice(0, 2),
-                            {
-                                id: 'swap',
-                                text: 'SWAP',
-                                path: '/swap',
-                                exact: true,
-                            },
-                            ...routes.slice(2)].reverse()
+                        // const desktopNavs = [
+                        //     ...routes.slice(0, 2),
+                        //     {
+                        //         id: 'swap',
+                        //         text: 'SWAP',
+                        //         path: '/swap',
+                        //         exact: true,
+                        //     },
+                        //     ...routes.slice(2)].reverse()
 
-                        let { children } = routes[0]
-                        if (children && children[0].id !== "swap")
-                            routes[0] = {
-                                ...routes[0],
-                                children: [{
-                                    id: 'swap',
-                                    text: 'SWAP',
-                                    path: '/swap',
-                                    exact: true,
-                                }, ...children]
-                            }
-                        const navsMobile = routes.reverse()
-                        setDesktopNavs( desktopNavs );
-                        setMobileNavs( navsMobile );
+                        // let { children } = routes[0]
+                        // if (children && children[0].id !== "swap")
+                        //     routes[0] = {
+                        //         ...routes[0],
+                        //         children: [{
+                        //             id: 'swap',
+                        //             text: 'SWAP',
+                        //             path: '/swap',
+                        //             exact: true,
+                        //         }, ...children]
+                        //     }
+                        // const navsMobile = routes.reverse()
+                        setMobileNavs(routes);
+                        setDesktopNavs(routes);
                     })
                     .catch((error) => {
                         console.error(error);
@@ -87,7 +87,7 @@ const Navbar = (props) => {
             <Router>
                 <NavbarSideWrap className="deus-logo">
                     <ExternalLink href="https://deus.finance/" active={false}>
-                        <img src="/imgs/navbar/deus-logo.svg" alt="" />
+                        <img src="/img/navbar/deus-logo.svg" alt="" />
                     </ExternalLink>
                     {tvl && <NavButton className="tvl" active={false} >
                         {t("tvl")} : {tvl}
@@ -103,7 +103,7 @@ const Navbar = (props) => {
                             } else {
                                 if (nav.image) {
                                     res = <ExternalLink href={nav.path} >
-                                        <img src={`/imgs/navbar/${nav.id}.svg`} alt="" />
+                                        <img src={`/img/navbar/${nav.id}.svg`} alt="" />
                                     </ExternalLink>
                                 } else {
                                     res = <ExternalLink href={nav.path} >
@@ -118,14 +118,14 @@ const Navbar = (props) => {
                         if (nav.children) {
                             res = <>
                                 {res}
-                                <img className="polygon" src="/imgs/navbar/polygon.png" height="13px" width="13px" alt="polygon" />
+                                <img className="polygon" src="/img/navbar/polygon.png" height="13px" width="13px" alt="polygon" />
                                 <SubNavbarContentWrap>
                                     {nav.children.map(subnav => {
                                         if (subnav.path.charAt(0) === "/")
                                             return <li key={subnav.id + "_desktop"}><ExternalLink href={baseURL + subnav.path} > {t(subnav.id)} </ExternalLink></li>
                                         if (subnav.image) {
                                             return <li key={subnav.id + "_desktop"}><ExternalLink href={subnav.path} textDecoration="none">
-                                                <img src={`/imgs/navbar/${subnav.id}.svg`} alt="" height="20%" width="20%" />
+                                                <img src={`/img/navbar/${subnav.id}.svg`} alt="" height="20%" width="20%" />
                                             </ExternalLink></li>
                                         }
                                         return <li key={subnav.id + "_desktop"}><ExternalLink href={subnav.path} textDecoration="none">
@@ -145,21 +145,9 @@ const Navbar = (props) => {
                 <OutsideClickHandler onOutsideClick={() => setOpen(false)}>
                     <NavbarMobileContent open={open}>
                         <ul onClick={() => setOpen(false)}>
-
-                            <li className="nav-item-lg" >
-                                <LanguageSelector />
+                            <li className="icon-close">
+                                <div className="menu-title">{t("menu")}</div><svg onClick={() => setOpen(!open)} viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" stroke="white" strokeWidth={1} fill="white" fillRule="evenodd"><g id="icon-shape"><polygon id="Combined-Shape" points="10 8.58578644 2.92893219 1.51471863 1.51471863 2.92893219 8.58578644 10 1.51471863 17.0710678 2.92893219 18.4852814 10 11.4142136 17.0710678 18.4852814 18.4852814 17.0710678 11.4142136 10 18.4852814 2.92893219 17.0710678 1.51471863 10 8.58578644" /></g></g></svg>
                             </li>
-
-                            {<div className="nav-item-wrap-img" style={{ marginTop: "5px", marginBottom: "20px" }}>
-                                {mobileNavs.filter(nav => nav.image).map((nav, index) => {
-                                    console.log(nav);
-                                    let res = null
-                                    res = <ExternalLink href={nav.path}  >
-                                        <img width='20px' height="20px" src={`/img/navbar/${nav.id}.svg`} alt="" />
-                                    </ExternalLink>
-                                    return <li key={nav.id + index} className="nav-item-img">{res}</li>
-                                })}
-                            </div>}
 
                             {mobileNavs.map((nav, index) => {
                                 let res = null
@@ -194,8 +182,19 @@ const Navbar = (props) => {
                                 return res
                             })}
 
-                            <li className="icon-close">
-                                <div className="menu-title">{t("menu")}</div><svg onClick={() => setOpen(!open)} viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" stroke="white" strokeWidth={1} fill="white" fillRule="evenodd"><g id="icon-shape"><polygon id="Combined-Shape" points="10 8.58578644 2.92893219 1.51471863 1.51471863 2.92893219 8.58578644 10 1.51471863 17.0710678 2.92893219 18.4852814 10 11.4142136 17.0710678 18.4852814 18.4852814 17.0710678 11.4142136 10 18.4852814 2.92893219 17.0710678 1.51471863 10 8.58578644" /></g></g></svg>
+                            {<div className="nav-item-wrap-img" style={{ marginTop: "5px", marginBottom: "20px" }}>
+                                {mobileNavs.filter(nav => nav.image).map((nav, index) => {
+                                    console.log(nav);
+                                    let res = null
+                                    res = <ExternalLink href={nav.path}  >
+                                        <img width='20px' height="20px" src={`/img/navbar/${nav.id}.svg`} alt="" />
+                                    </ExternalLink>
+                                    return <li key={nav.id + index} className="nav-item-img">{res}</li>
+                                })}
+                            </div>}
+
+                            <li className="nav-item-lg" >
+                                <LanguageSelector />
                             </li>
                         </ul>
                     </NavbarMobileContent>
