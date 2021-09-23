@@ -22,9 +22,10 @@ export default function Main() {
               </h1>
               <h4 className="transpose">
                 <span className="next-gen">
-                  Transpose any digitally verifiable asset securely onto the blockchain.<br />
-                  Trade real-world assets and derivatives on the blockchain without limits. 
-                  <a className="learn-more" href={deusWiki} target="_blank" rel="noreferrer"> Learn more </a>
+                  DEUS Finance Evolution is a marketplace of decentralized financial services, <br />
+                  where we provide the infrastructure for others to build financial instruments, <br />
+                  such as synthetic stock trading platforms, options, and futures trading.
+                  {/* <a className="learn-more" href={deusWiki} target="_blank" rel="noreferrer"> Learn more </a> */}
                 </span>
                 <br />
               </h4>
@@ -34,8 +35,8 @@ export default function Main() {
             </div>
           </div>
           <div className="btns-wrap">
-            <a className="buy-tokens " href={baseURL + "/swap"} target="_blank" rel="noreferrer">
-              BUY TOKENS
+            <a className="buy-tokens" href={baseURL + "/swap"} target="_blank" rel="noreferrer">
+              <span className="buy-tokens-text"> BUY DEA </span>
             </a>
             <a className="work-btn-wrap " href={baseURL + "/synchronizer/"} target="_blank" rel="noreferrer" style={{display: 'flex', justifyContent: 'center', marginLeft: 10}}>
               <div className="work-btn"> start trading</div>
@@ -44,7 +45,7 @@ export default function Main() {
           </div>
         </div>
       </div>
-      <div className="why-wrap">
+      {/* <div className="why-wrap">
         <div className="item">
           <img src="/img/deus-his.jpg" alt="WHY DEUS" width="892px" height="525px" maxwidth="100%"/>
         </div>
@@ -64,9 +65,9 @@ export default function Main() {
             Nick Szabo
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="home2">
-        <div className="mid-title">
+        {/* <div className="mid-title">
           MINT AND TRADE <br />
           STOCKS ON ETHEREUM, xDAI, et al.
         </div>
@@ -88,8 +89,8 @@ export default function Main() {
             <p>Learn more on our wiki</p>
             <p>→</p>
           </a>
-        </div>
-        <div className="sync-work-wrap">
+        </div> */}
+        {/* <div className="sync-work-wrap">
           <div className="sync-item">
             <div className="cycle-wrapper tesla-shadow">
               <div className="tesla-container">
@@ -131,12 +132,12 @@ export default function Main() {
               dTSLA token price is perpetually updated to match the price of one share of TSLA.
             </p>
           </div>
-        </div>
-        <a className="m-auto work-btn-wrap " href={baseURL + "/synchronizer/"} style={{display: 'flex', justifyContent: 'center'}}>
+        </div> */}
+        {/* <a className="m-auto work-btn-wrap " href={baseURL + "/synchronizer/"} style={{display: 'flex', justifyContent: 'center'}}>
           <div className="work-btn" style={{textTransform: 'uppercase'}}>Start trading</div>
           <div style={{marginLeft: 5, marginTop: '-3px'}}>→</div>
-        </a>
-        <hr className="break-line" style={{marginTop: 130}} />
+        </a> */}
+        {/* <hr className="break-line" style={{marginTop: 130}} /> */}
         <div className="mid-title">
           OUR TOKENS
         </div>
@@ -158,19 +159,20 @@ export default function Main() {
                 </div>
                 <div className="hr-break" />
                 <div className="info">
-                  DEUS token is the Store of Value of the DEUS ecosystem. Fundamentally, DEUS token is a proxy
-                  of the Ethereum token. It
-                  is part of the DEUS treasury and is backed by ETH as the collateral.
+                  <span>The $DEUS token is the main protocol token in the DEUS Finance ecosystem. 
+                    ll rewards from DEUS and the stablefarm pools are paid out in $DEUS tokens. 
+                    $DEUS comprises a portion of the $DEI stablecoin and is burned every time new $DEI is minted.
+                  </span>
                   <br />
                   <br />
-                  DEUS gets minted/burned
-                  on our DEUS Swap market
-                  maker, thus allowing for an optimal demand &amp; supply ratio without a finite market cap.
-                  The price of DEUS is determined by a bonding curve, thus making DEUS a less volatile token.
-                  <a className="learn-wiki" href={deusWiki + "/docs/deus"}>
+                  <span>Additionally, $DEUS is the governance token of DEUS Finance. As a DAO, any user can create 
+                    proposals and have others members vote on them.
+                  </span>
+                  <br />
+                  {/* <a className="learn-wiki" href={deusWiki + "/docs/deus"}>
                     <p>Learn more on our wiki</p>
                     <p>→</p>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -179,36 +181,34 @@ export default function Main() {
             <div className="token-info ">
               <div className="left">
                 <div className="title">
-                  <svg width={40} height={40} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.55 10.8736C37.8111 10.4641 37.9602 9.96161 37.9602 9.45911C37.9602 9.32884 37.9416 9.17995 37.9416 9.06828C37.7551 7.7655 36.6364 6.77911 35.3125 6.77911H35.2939C34.2311 6.77911 33.2988 7.41189 32.8699 8.32383C27.8542 7.72828 24.3674 5.4205 22.4469 3.74549C22.5961 3.41049 22.6893 3.03827 22.6893 2.66605C22.6893 1.54938 21.9808 0.525765 20.918 0.153542C20.3399 -0.0511806 19.6687 -0.0511806 19.1093 0.153542C18.0465 0.525765 17.338 1.54938 17.338 2.66605C17.338 3.03827 17.4126 3.41049 17.5804 3.74549C15.6412 5.4205 12.1544 7.74689 7.12006 8.32383C6.69121 7.41189 5.77756 6.79772 4.71475 6.77911C4.71475 6.77911 4.71475 6.77911 4.69611 6.77911C3.44684 6.77911 2.34673 7.65383 2.08569 8.88217C2.0484 9.04967 2.02975 9.23578 2.02975 9.42189C2.02975 9.943 2.17892 10.4455 2.45861 10.8736C1.58225 12.288 0.612672 14.298 0.202464 16.6616C-0.67389 21.7425 0.873712 29.1125 13.3291 35.4775C14.5597 36.1103 15.9022 36.7244 17.3193 37.32V37.3386C17.3193 38.8089 18.5127 40 19.9857 40C21.4587 40 22.652 38.8089 22.652 37.3386V37.32C23.9945 36.7617 25.2997 36.1661 26.4931 35.5519C33.8395 31.8297 38.2399 27.363 39.5638 22.2636C40.8503 17.4619 39.0231 13.2558 37.55 10.8736ZM21.6265 28.2191C21.2163 27.8097 20.6383 27.5678 20.0043 27.5678C19.3704 27.5678 18.811 27.8097 18.3821 28.2191C17.7295 27.9028 16.9837 27.4933 16.2379 26.935C13.6834 25.018 12.3968 22.4869 12.3968 19.3789C12.3968 18.6158 12.5087 17.89 12.7138 17.2013C13.0681 17.2013 13.4037 17.1083 13.702 16.9594V17.2013V16.9594C14.4852 16.5872 15.0072 15.7869 15.0072 14.875C15.0072 14.5027 14.914 14.1677 14.7648 13.8513C16.126 12.5672 17.9533 11.7855 19.9857 11.7855C21.9994 11.7855 23.8454 12.5858 25.2065 13.87C25.0573 14.1863 24.9641 14.5213 24.9641 14.8936C24.9641 16.1591 25.9896 17.2013 27.2575 17.22C27.4626 17.9086 27.5745 18.6344 27.5745 19.3975C27.5745 22.5055 26.288 25.0366 23.7335 26.9536C23.0249 27.4933 22.2605 27.9214 21.6265 28.2191ZM20.0043 5.30883C20.023 5.30883 20.0416 5.30883 20.0603 5.30883C20.4705 6.98383 21.1417 8.603 22.0367 10.0733C21.3841 9.92439 20.6942 9.84995 20.0043 9.84995C19.3144 9.84995 18.6245 9.92439 17.9719 10.0733C18.8669 8.603 19.5382 6.98383 19.9484 5.30883C19.967 5.30883 19.9857 5.30883 20.0043 5.30883ZM13.702 12.2136C13.6834 12.2322 13.6647 12.2508 13.6647 12.2508C13.6461 12.2694 13.6088 12.288 13.5902 12.3066C13.4596 12.4183 13.3478 12.5113 13.2359 12.6044C13.0681 12.5672 12.9003 12.5486 12.7138 12.5486C12.4714 12.5486 12.229 12.5858 12.0053 12.6602C10.9425 11.6552 9.76777 10.7805 8.49985 10.0547C12.546 9.36606 15.6226 7.65383 17.6736 6.10911C16.8718 8.45411 15.5107 10.5572 13.702 12.2136ZM28.0407 12.6788C27.8169 12.6044 27.5559 12.5672 27.3135 12.5672C27.127 12.5672 26.9592 12.5858 26.7914 12.623C26.6795 12.53 26.5676 12.4369 26.4744 12.3438L26.2134 12.1205C24.4607 10.4641 23.1182 8.39828 22.3537 6.14633C24.4234 7.70967 27.5372 9.42189 31.6393 10.1105C30.3341 10.7991 29.1221 11.6738 28.0407 12.6788ZM14.2241 33.7653C5.19954 29.1497 1.02288 23.3616 2.12298 17.0152C2.47725 15.0052 3.27902 13.2744 4.02486 12.0461C4.22996 12.1019 4.45371 12.1205 4.65881 12.1205H4.67746C5.42329 12.1205 6.11319 11.8227 6.59798 11.3016C8.05235 11.9902 9.35756 12.9022 10.5509 14.0188C10.439 14.298 10.3831 14.5772 10.3831 14.8936C10.3831 15.4705 10.5882 15.9916 10.9425 16.4011C10.6255 17.3502 10.4577 18.3552 10.4577 19.3975C10.4577 23.1197 12.0798 26.2836 15.1378 28.5541C16.0328 29.2241 16.9278 29.708 17.6922 30.0616C17.7482 30.9178 18.2889 31.6622 19.0347 31.9972V34.8819C18.6618 35.0308 18.3262 35.2542 18.0652 35.5333C16.704 34.9564 15.4175 34.3608 14.2241 33.7653ZM37.6992 21.7983C36.5245 26.3208 32.4597 30.378 25.6354 33.8397C24.4793 34.4167 23.2487 34.9936 21.9435 35.5333C21.6824 35.2542 21.3468 35.0308 20.9739 34.8819V31.9972C21.7197 31.6436 22.2605 30.9178 22.3164 30.0616C23.0809 29.708 23.9759 29.2055 24.8709 28.5541C27.9288 26.2836 29.551 23.1197 29.551 19.3975C29.551 18.3552 29.3832 17.3502 29.0662 16.4011C29.4205 15.9916 29.6256 15.4705 29.6256 14.8936C29.6256 14.5958 29.5696 14.298 29.4578 14.0375C30.6511 12.9394 31.9749 12.0461 33.4293 11.3761C33.9141 11.8413 34.5667 12.1205 35.2752 12.1205H35.2939C35.5176 12.1205 35.7414 12.0833 35.9651 12.0275C37.2517 14.1491 38.762 17.7411 37.6992 21.7983Z" fill="url(#paint3_linear)" />
-                    <defs>
-                      <linearGradient id="paint3_linear" x1="-0.0026403" y1="19.9959" x2="40.0138" y2="19.9959" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#0779E4" />
-                        <stop offset="0.9341" stopColor="#EA2C62" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <p>DEA</p>
+                  <img src="/img/dei.svg" alt="dei" width="40px" height="40px" />
+                  <p style={{marginLeft: "8px"}}> DEI </p>
                 </div>
                 <div className="hr-break" />
                 <div className="info">
-                  The DEA token acts as a system reserve, akin to an insurance fund. Effectively, DEA is a
-                  share of the DEUS ecosystem.
-                  DEA holders receive a share of the trading fees for providing liquidity in the DEUS Vaults.
-                  It’s a much more volatile
-                  token with a <span className="grad1">finite supply of 166,670</span> tokens. No more DEA will
-                  ever be minted.
-                  <a className="learn-wiki" href={deusWiki + "/docs/dea"}>
+                  <span>
+                    $DEI is a fractional reserve, cross-chain stablecoin. It’s composition is free-flowing, 
+                    comprised of approximately 20% $DEUS and 80% of another trusted stablecoin, depending on the chain. 
+                    $DEI is truly cross-chain, in that it utilizes one native bridge to all chains.
+                  </span>
+
+                  <br />
+                  <br />
+
+                  <span>
+                    $DEI is used as the collateral for every 3rd-party financial instrument built on DEUS Finance.
+                  </span>
+                  {/* <a className="learn-wiki" href={deusWiki + "/docs/dea"}>
                     <p>Learn more on our wiki</p>
                     <p>→</p>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <hr className="break-line" />
-        <div className="deus-echo">
+        {/* <hr className="break-line" /> */}
+        {/* <div className="deus-echo">
           <div className="title">THE DEUS ECOSYSTEM</div>
           <p className="description">
             <br />
@@ -223,12 +223,12 @@ export default function Main() {
             <p>Learn more on our wiki</p>
             <p>→</p>
           </a>
-        </div>
+        </div> */}
       </div>
-      <div className="echo-system">
+      {/* <div className="echo-system">
         <img className="desktop" alt="" src="/img/full-echo.svg?v=1.0" />
         <img className="mobile" alt="" src="/img/min-echo.svg" />
-      </div>
+      </div> */}
       <footer>
         <div className="container">
           <div className="group">

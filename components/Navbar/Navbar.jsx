@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ExternalLink } from '../Link';
 import { StaticRouter as Router } from 'react-router-dom';
-// import { desktopNavs, mobileNavs } from './navs';
 import OutsideClickHandler from 'react-outside-click-handler';
 import LanguageSelector from './LanguageSelector';
 import {
@@ -27,30 +26,8 @@ const Navbar = (props) => {
                 fetch('https://raw.githubusercontent.com/deusfinance/app-ui/dei/src/config/routes.json')
                     .then((response) => response.json())
                     .then((routes) => {
-                        // const desktopNavs = [
-                        //     ...routes.slice(0, 2),
-                        //     {
-                        //         id: 'swap',
-                        //         text: 'SWAP',
-                        //         path: '/swap',
-                        //         exact: true,
-                        //     },
-                        //     ...routes.slice(2)].reverse()
-
-                        // let { children } = routes[0]
-                        // if (children && children[0].id !== "swap")
-                        //     routes[0] = {
-                        //         ...routes[0],
-                        //         children: [{
-                        //             id: 'swap',
-                        //             text: 'SWAP',
-                        //             path: '/swap',
-                        //             exact: true,
-                        //         }, ...children]
-                        //     }
-                        // const navsMobile = routes.reverse()
                         setMobileNavs(routes);
-                        setDesktopNavs(routes);
+                        setDesktopNavs([...routes].reverse());
                     })
                     .catch((error) => {
                         console.error(error);
@@ -184,7 +161,6 @@ const Navbar = (props) => {
 
                             {<div className="nav-item-wrap-img" style={{ marginTop: "5px", marginBottom: "20px" }}>
                                 {mobileNavs.filter(nav => nav.image).map((nav, index) => {
-                                    console.log(nav);
                                     let res = null
                                     res = <ExternalLink href={nav.path}  >
                                         <img width='20px' height="20px" src={`/img/navbar/${nav.id}.svg`} alt="" />
