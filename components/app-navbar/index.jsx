@@ -221,7 +221,7 @@ export const NavWarningButton = styled(NavButton).attrs({
 `
 
 export const NavbarSideWrap = styled.div`
-    margin-top: 17px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;

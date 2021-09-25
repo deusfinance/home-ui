@@ -9,15 +9,22 @@ export default function Main() {
   return (
     <div>
       <Navbar baseURL={baseURL} open={open} setOpen={setOpen} />
-      <div className={`${open? "blurred":""}`} id="blur-pop" />
+      <div className={`${open ? "blurred" : ""}`} id="blur-pop" />
 
-      <div style={{width: '100%', borderBottom: '2px solid #242424', position: 'relative'}}>
+      <div style={{ width: '100%', borderBottom: '2px solid #242424', position: 'relative' }}>
         <div className="home-wrapper ">
           <div className="home-content">
             <div className="asset">
-              <img className="deus-dea-logo" src="/img/deus-dea.svg" alt="deus-dea" height="85px" width="85px" />
+              <div style={{ display: "flex", marginBottom: "40px" }}>
+                <img className="deus-dea-logo" style={{ marginRight: "20px", marginTop: "-10px" }} src="/img/navbar/deus.svg" alt="deus-dea" height="65px" />
+                <div style={{ maxWidth: "400px", textAlign: "center" }}>
+                  <img className="deus-logo" style={{ width: "100%" }} src="/img/deus-finance.svg" alt="deus-logo" />
+                  <img className="deus-logo-2" src="/img/evolution.svg" style={{ width: "270px", margin: "auto" }} />
+                </div>
+
+              </div>
               <h1 className="tokenization">
-                <img className="deus-logo" src="/img/deus-finance.svg" alt="deus-logo" height="62px" width="363" maxwidth="90%" /> <br />
+
                 UNLIMITED ACCESS TO GLOBAL MARKETS
               </h1>
               <h4 className="transpose">
@@ -36,108 +43,16 @@ export default function Main() {
           </div>
           <div className="btns-wrap">
             <a className="buy-tokens" href={baseURL + "/swap"} target="_blank" rel="noreferrer">
-              <span className="buy-tokens-text"> BUY DEA </span>
+              <span className="buy-tokens-text"> BUY DEUS </span>
             </a>
-            <a className="work-btn-wrap " href={baseURL + "/synchronizer/"} target="_blank" rel="noreferrer" style={{display: 'flex', justifyContent: 'center', marginLeft: 10}}>
-              <div className="work-btn"> start trading</div>
-              <div style={{marginLeft: 8, marginTop: '-3px'}}>→</div>
+            <a className="work-btn-wrap " href={baseURL + "/synchronizer/"} target="_blank" rel="noreferrer" style={{ display: 'flex', justifyContent: 'center', marginLeft: 10 }}>
+              <div className="work-btn"> Learn more</div>
+              <div style={{ marginLeft: 8, marginTop: '-3px' }}>→</div>
             </a>
           </div>
         </div>
       </div>
-      {/* <div className="why-wrap">
-        <div className="item">
-          <img src="/img/deus-his.jpg" alt="WHY DEUS" width="892px" height="525px" maxwidth="100%"/>
-        </div>
-        <div className="item">
-          <div className="why-about-deus">
-            <p>WHY DEUS?</p>
-            <br />
-            “Imagine the ideal protocol. It would have the most trustworthy third party
-            imaginable — a deity who is on everybody’s side. All the parties would send their
-            inputs to God.
-            <br /><br />
-            God would reliably determine the results and return the outputs.
-            God being the ultimate in confessional discretion, no party would learn anything more about the other
-            parties’ inputs
-            than they could learn from their own inputs and the output.”
-            <br /><br />
-            Nick Szabo
-          </div>
-        </div>
-      </div> */}
       <div className="home2">
-        {/* <div className="mid-title">
-          MINT AND TRADE <br />
-          STOCKS ON ETHEREUM, xDAI, et al.
-        </div>
-        <div className="wrap-assets">
-          <p className="title">TRANSMIT ASSETS ONTO THE BLOCKCHAIN</p>
-          <p className="desc">
-            <br />
-            The assets on DEUS (dAssets) are continuously and indestructibly pegged 1:1 to their real-world
-            equivalents.
-            dAsset is a standard ERC20 token but with its value parallel to the asset it represents,<br />
-            ie. 1 dTSLA= 1 TSLA.
-            <br />
-            <br />
-            For the first time ever, you can now freely mint and trade stocks on ETH or xDAI without any
-            restrictions.
-            DEUS aims to become chain-agnostic and is about to launch on BSC, with Avax and others soon to follow.
-          </p>
-          <a className="learn-wiki" href={deusWiki + "/docs/dAssets"}>
-            <p>Learn more on our wiki</p>
-            <p>→</p>
-          </a>
-        </div> */}
-        {/* <div className="sync-work-wrap">
-          <div className="sync-item">
-            <div className="cycle-wrapper tesla-shadow">
-              <div className="tesla-container">
-                <div><img src="/img/tesla-logo_black.svg" alt="tesla" width="80px" height="80px" /></div>
-                <div>TSLA</div>
-              </div>
-            </div>
-            <p>
-              Live price of TSLA stock is provided by three independent sources, to ensure impartiality.
-            </p>
-          </div>
-          <div className="sync-item div-man">
-            <div className="spinner left-sp" />
-            <div className="cycle-wrapper-man">
-              <div className="l-arrow">
-                <div className="spinner" />
-                  <img src="/img/right-sign.svg" alt="" />
-                </div>
-              <img src="/img/man.svg" alt="tsla" width="39px" height="55px" />
-              <div className="r-arrow">
-                <div className="spinner right-sp" />
-                  <img src="/img/right-sign.svg" alt="" />
-                </div>
-            </div>
-            <p className="our-pioneering">
-              Our pioneering, supercharged oracle technology connects blockchain with the outside world in
-              milliseconds.
-            </p>
-            <div className="spinner right-sp" />
-          </div>
-          <div className="sync-item">
-            <div className="cycle-wrapper dtsla-shadow">
-              <div className="tesla-container">
-                <div><img src="/img/tesla-logo_white.svg" alt="tesla" width="80px" height="80px" /></div>
-                <div>dTSLA</div>
-              </div>
-            </div>
-            <p className="dtesla-token">
-              dTSLA token price is perpetually updated to match the price of one share of TSLA.
-            </p>
-          </div>
-        </div> */}
-        {/* <a className="m-auto work-btn-wrap " href={baseURL + "/synchronizer/"} style={{display: 'flex', justifyContent: 'center'}}>
-          <div className="work-btn" style={{textTransform: 'uppercase'}}>Start trading</div>
-          <div style={{marginLeft: 5, marginTop: '-3px'}}>→</div>
-        </a> */}
-        {/* <hr className="break-line" style={{marginTop: 130}} /> */}
         <div className="mid-title">
           OUR TOKENS
         </div>
@@ -159,20 +74,15 @@ export default function Main() {
                 </div>
                 <div className="hr-break" />
                 <div className="info">
-                  <span>The $DEUS token is the main protocol token in the DEUS Finance ecosystem. 
-                    ll rewards from DEUS and the stablefarm pools are paid out in $DEUS tokens. 
+                  <span>The $DEUS token is the main protocol token in the DEUS Finance ecosystem.
+                    ll rewards from DEUS and the stablefarm pools are paid out in $DEUS tokens.
                     $DEUS comprises a portion of the $DEI stablecoin and is burned every time new $DEI is minted.
                   </span>
                   <br />
                   <br />
-                  <span>Additionally, $DEUS is the governance token of DEUS Finance. As a DAO, any user can create 
+                  <span>Additionally, $DEUS is the governance token of DEUS Finance. As a DAO, any user can create
                     proposals and have others members vote on them.
                   </span>
-                  <br />
-                  {/* <a className="learn-wiki" href={deusWiki + "/docs/deus"}>
-                    <p>Learn more on our wiki</p>
-                    <p>→</p>
-                  </a> */}
                 </div>
               </div>
             </div>
@@ -182,13 +92,13 @@ export default function Main() {
               <div className="left">
                 <div className="title">
                   <img src="/img/dei.svg" alt="dei" width="40px" height="40px" />
-                  <p style={{marginLeft: "8px"}}> DEI </p>
+                  <p style={{ marginLeft: "8px" }}> DEI </p>
                 </div>
                 <div className="hr-break" />
                 <div className="info">
                   <span>
-                    $DEI is a fractional reserve, cross-chain stablecoin. It’s composition is free-flowing, 
-                    comprised of approximately 20% $DEUS and 80% of another trusted stablecoin, depending on the chain. 
+                    $DEI is a fractional reserve, cross-chain stablecoin. It’s composition is free-flowing,
+                    comprised of approximately 20% $DEUS and 80% of another trusted stablecoin, depending on the chain.
                     $DEI is truly cross-chain, in that it utilizes one native bridge to all chains.
                   </span>
 
@@ -283,8 +193,8 @@ export default function Main() {
                 </a>
               </li>
               <li><a href="https://etherscan.io/token/0x80ab141f324c3d6f2b18b030f1c4e95d4d658778" target="_blank" rel="noreferrer">
-                  DEA
-                </a>
+                DEA
+              </a>
               </li>
             </ul>
           </div>
@@ -292,5 +202,5 @@ export default function Main() {
       </footer>
     </div>
   )
-  
+
 }

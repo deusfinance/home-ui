@@ -12,6 +12,7 @@ import {
     SubNavbarContentWrap,
     NavbarMobileContent
 } from '../app-navbar/index';
+import { Flex } from 'rebass';
 
 const Navbar = (props) => {
     const [tvl, setTvl] = useState(null)
@@ -64,7 +65,10 @@ const Navbar = (props) => {
             <Router>
                 <NavbarSideWrap className="deus-logo">
                     <ExternalLink href="https://deus.finance/" active={false}>
-                        <img src="/img/navbar/deus-logo.svg" alt="" />
+                        <Flex flexDirection="row" justifyContent="flex-start" alignItems="center">
+                            <img style={{ height: "32px" }} src="/img/navbar/deus.svg" alt="deus" />
+                            <img style={{ marginLeft: "10px", height: "22px" }} src="/img/navbar/deus-text.svg" alt="deus" />
+                        </Flex>
                     </ExternalLink>
                     {tvl && <NavButton className="tvl" active={false} >
                         {t("tvl")} : {tvl}
