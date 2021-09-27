@@ -1,4 +1,5 @@
 import React from 'react';
+import Chains from './chains';
 
 
 const TopHeader = ({ baseURL }) => {
@@ -10,12 +11,11 @@ const TopHeader = ({ baseURL }) => {
                         <img className="deus-dea-logo" style={{ marginRight: "20px", marginTop: "-10px" }} src="/img/navbar/deus.svg" alt="deus-dea" height="65px" />
                         <div style={{ maxWidth: "400px", textAlign: "center" }}>
                             <img className="deus-logo" style={{ width: "100%" }} src="/img/deus-finance.svg" alt="deus-logo" />
-                            <img className="deus-logo-2" src="/img/evolution.svg" style={{ width: "270px", margin: "auto" }} />
+                            <img className="deus-logo-2" src="/img/evolution.svg" alt="deus-finance" style={{ width: "270px", margin: "auto" }} />
                         </div>
 
                     </div>
                     <h1 className="tokenization">
-
                         UNLIMITED ACCESS TO GLOBAL MARKETS
                     </h1>
                     <h4 className="transpose">
@@ -41,6 +41,7 @@ const TopHeader = ({ baseURL }) => {
                     <div style={{ marginLeft: 8, marginTop: '-3px' }}>→</div>
                 </a>
             </div>
+            <Chains />
         </div>
     </div>);
 }

@@ -13,10 +13,6 @@ body,
   height: 100%;
 }
 
-body {
-  background: #a02e2e;
-}
-
 .blured {
   top: 0;
   position: fixed;
@@ -171,11 +167,6 @@ a {
 @font-face {
   font-family: Segoe UI;
   src: url("../fonts/SegoeUI.woff");
-}
-
-@font-face {
-  font-family: Roboto Medium;
-  src: url("../fonts/Roboto-Medium.ttf");
 }
 
 @font-face {

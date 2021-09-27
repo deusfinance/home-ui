@@ -13,6 +13,69 @@ body {
 html {
 	height: 100%;
 }
+.grad-color-1 {
+	display: inline-block;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	background: #0096e8;
+	background: -webkit-linear-gradient(to right, #0096e8 0%, #ff0000 100%);
+	background: -moz-linear-gradient(to right, #0096e8 0%, #ff0000 100%);
+	background: linear-gradient(to right, #0096e8 0%, #ff0000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 5px 0;
+}
+
+.supported-chains {
+	max-width: 900px;
+	margin: auto;
+	margin-top: 150px;
+	.right {
+		float: right;
+	}
+	.wrap-chains {
+		background: linear-gradient(98.22deg, #e45b5b 17.84%, #5e5be4 93.95%);
+		border-radius: 50px;
+		padding: 5px;
+		.container {
+			border-radius: 200px;
+			background: #000000;
+			padding: 8px;
+			height: 100%;
+			list-style-type: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			li {
+				margin: 0 32px;
+				img {
+					vertical-align: middle;
+					width: 60px;
+					// height: 40px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
+.roadmap-warp {
+	width: 100%;
+	margin-bottom: 150px;
+	.roadmap-img {
+		max-width: 100%;
+	}
+}
+
+.echosystem-warp {
+	width: 100%;
+
+	.echosystem-img {
+		max-width: 100%;
+	}
+}
 
 .home-wrapper,
 .echo-system,
@@ -29,7 +92,7 @@ html {
 
 .home-wrapper {
 	padding-top: 20vh;
-	padding-bottom: 26vh;
+	padding-bottom: 15vh;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -111,10 +174,6 @@ html {
 	display: flex;
 	justify-content: flex-start;
 	width: 100%;
-	a {
-		// flex-grow: 1;
-		// max-width: 304px;
-	}
 
 	.work-btn-wrap {
 		width: 250px;
@@ -148,7 +207,8 @@ html {
 	// max-width: 1500px;
 	margin: auto;
 	color: #ffffff;
-	margin-top: 150px;
+	// margin-top: 150px;
+	margin-top: 70px;
 	// padding: 0 20px;
 
 	.mid-title {
@@ -156,8 +216,8 @@ html {
 		font-size: 35px;
 		margin: auto;
 		text-align: center;
-		margin-bottom: 150px;
-		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-top: 50px;
 	}
 	.wrap-assets {
 		width: 100%;
