@@ -59,7 +59,7 @@ export const NavbarWrap = styled(RowBetween)`
 
     .hamb{
         margin-left: 20px;
-        margin-top: -17px;
+        /* margin-top: -17px; */
         display: none;
     }
 

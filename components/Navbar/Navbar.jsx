@@ -118,9 +118,9 @@ const Navbar = (props) => {
                         }
                         return <li key={nav.id + "_desktop"}>{res}</li>
                     })}
-                    <li>
+                    {/* <li>
                         <LanguageSelector />
-                    </li>
+                    </li> */}
                 </NavbarContentWrap>
 
                 <OutsideClickHandler onOutsideClick={() => setOpen(false)}>
