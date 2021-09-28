@@ -74,12 +74,31 @@ html {
 	}
 }
 
-.echosystem-warp {
+.ecosystem-warp {
 	width: 100%;
-
-	.echosystem-img {
+	.ecosystem-img {
 		max-width: 100%;
 	}
+	.ecosystem-text {
+		font-family: Roboto;
+		font-weight: bold;
+		position: absolute;
+		max-width: 22%;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.ecosystem-title {
+
+	}
+	.ecosystem-subtitle {
+		
+	}
+}
+
+.hr-break-colorful {
+	background: linear-gradient(98.22deg, #e45b5b 17.84%, #5e5be4 93.95%);
+	height: 2px;
+	margin: 20px 0;
 }
 
 .home-wrapper,

@@ -2,8 +2,29 @@ import React from 'react';
 
 
 const Ecosystem = () => {
-    return (<div className="echosystem-warp">
-        <img src="/img/echosystem2.svg" alt="dei" className="echosystem-img" />
+    return (<div className="ecosystem-warp">
+        {/* <img src="/img/ecosystem2.svg" alt="dei" className="ecosystem-img" /> */}
+        
+        <div className="ecosystem-text">
+            <p className="ecosystem-title"> DEUS FINANCE ECOSYSTEM </p>
+
+            <div className="hr-break-colorful" />
+
+            <span className="ecosystem-subtitle"> The DEUS Ecosystem consists of two parts: DEUS and DEI. </span>
+            <br />
+            <br />
+            <span className="ecosystem-subtitle"> 
+                DEI is a cross-chain, fractional reserve stablecoin, with one unified bridge to all chains.
+                Read more about DEI <a style={{ textDecoration: "underline" }} href="https://medium.com/deus-finance/dei-cross-chain-liquidity-with-a-fractional-reserve-stablecoin-3e37b7c64720" target="_blank" rel="noopener noreferrer">here</a>.
+            </span>
+            <br />
+            <br />
+            <span className="ecosystem-subtitle">
+                Every 3rd-party financial instrument that builds on top of DEUS Finance’s
+                infrastructure uses DEI as its collateral mechanism.
+            </span>
+        </div>
+        <img src="/img/ecosystem1.svg" alt="dei" className="ecosystem-img" />
     </div>);
 }
 
