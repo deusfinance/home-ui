@@ -16,7 +16,7 @@ export default function Main() {
       <Navbar baseURL={baseURL} open={open} setOpen={setOpen} />
       <div className={`${open ? "blurred" : ""}`} id="blur-pop" />
       <TopHeader baseURL={baseURL} />
-
+      
       <div className="home2">
         <Tokens />
         <Roadmap />

@@ -24,7 +24,7 @@ const Tokens = () => {
                         <div className="hr-break" />
                         <div className="info">
                             <span>The $DEUS token is the main protocol token in the DEUS Finance ecosystem.
-                                ll rewards from DEUS and the stablefarm pools are paid out in $DEUS tokens.
+                                All rewards from DEUS and the stablefarm pools are paid out in $DEUS tokens.
                                 $DEUS comprises a portion of the $DEI stablecoin and is burned every time new $DEI is minted.
                             </span>
                             <br />
@@ -40,8 +40,8 @@ const Tokens = () => {
                 <div className="token-info ">
                     <div className="left">
                         <div className="title">
-                            <img src="/img/dei.svg" alt="dei" width="40px" height="40px" />
-                            <p style={{ marginLeft: "8px" }}> DEI </p>
+                            <img src="/img/dei.svg" alt="dei" width="48px" height="48px" />
+                            <p style={{ marginLeft: "6px" }}> DEI </p>
                         </div>
                         <div className="hr-break" />
                         <div className="info">

@@ -430,8 +430,8 @@ html {
 }
 
 .btns-wrap .buy-tokens:hover {
-  -webkit-filter: brightness(1.3);
-          filter: brightness(1.3);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 .home2 {

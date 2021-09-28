@@ -10,6 +10,7 @@ import '../public/styles/navbar.css';
 import '../public/styles/index.css';
 import '../public/styles/footer.css';
 import '../public/styles/base.css';
+import '../public/styles/index.scss'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -28,8 +29,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>DEUS finance</title>
         <meta name="description" content="UNLIMITED ACCESS TO GLOBAL MARKETS DEUS Finance Evolution is a marketplace of decentralized financial services,
-where we provide the infrastructure for others to build financial instruments,
-such as synthetic stock trading platforms, options, and futures trading." />
+          where we provide the infrastructure for others to build financial instruments,
+          such as synthetic stock trading platforms, options, and futures trading." />
         <meta data-react-helmet="true" property="og:image" content="https://wiki.deus.finance/img/deus.png" />
         <meta name="keywords" content="deus,dea" />
         <meta name="author" content="deus finance" />
