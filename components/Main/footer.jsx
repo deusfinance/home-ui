@@ -5,34 +5,18 @@ const Footer = ({ baseURL }) => {
     return (<footer>
         <div className="container">
             <div className="group">
-                <h4>APP </h4>
+                <h4>APP(LEGACY)</h4>
                 <ul>
                     <li><a href={baseURL + "/swap"} target="_blank" rel="noreferrer">SWAP</a></li>
-                    <li><a href={baseURL + "/stake-and-yield"} target="_blank" rel="noreferrer">STAKE &amp; YIELD (NEW)</a></li>
-                    <li><a href={baseURL + "/staking"} target="_blank" rel="noreferrer">STAKING (LEGACY)</a></li>
-                    <li><a href={baseURL + "/vaults"} target="_blank" rel="noreferrer">VAULTS (LEGACY)</a></li>
-                </ul>
-            </div>
-            <div className="group">
-                <h4>BUY REGISTRARS </h4>
-                <ul>
-                    <li><a href={baseURL + "/crosschain/xdai/synchronizer/"} target="_blank" rel="noreferrer">ETH</a>
-                    </li>
-                    <li><a href={baseURL + "/crosschain/xdai/synchronizer/"} target="_blank" rel="noreferrer">xDAI</a></li>
-                    <li><a href={baseURL + "/crosschain/xdai/synchronizer/"} target="_blank" rel="noreferrer">BSC</a></li>
-                </ul>
-            </div>
-            <div className="group">
-                <h4>FUTURES</h4>
-                <ul>
-                    <li><a href={baseURL + "/bakkt"} target="_blank" rel="noreferrer">BAKKT</a></li>
-                    <li><a href={baseURL + "/musk"} target="_blank" rel="noreferrer">MUSK</a></li>
+                    <li><a href={baseURL + "/stake-and-yield"} target="_blank" rel="noreferrer">STAKE &amp; YIELD</a></li>
+                    <li><a href={baseURL + "/staking"} target="_blank" rel="noreferrer">STAKING</a></li>
+                    <li><a href={baseURL + "/vaults"} target="_blank" rel="noreferrer">VAULTS</a></li>
                 </ul>
             </div>
             <div className="group">
                 <h4>RESOURCES</h4>
                 <ul>
-                    {/* <li><a href={deusWiki} target="_blank" rel="noreferrer">Wiki</a></li> */}
+                    <li><a href="https://medium.com/@DEUSFinanceMichael" target="_blank" rel="noreferrer">FAQ</a></li>
                     <li><a href="https://github.com/deusfinance" target="_blank" rel="noreferrer">Github</a></li>
                     <li><a href="https://www.youtube.com/channel/UCEVRMEr1Kt-n6ycQSEYBScQ" target="_blank" rel="noreferrer">Youtube</a>
                     </li>
@@ -41,24 +25,26 @@ const Footer = ({ baseURL }) => {
                 </ul>
             </div>
             <div className="group">
-                <h4>COMMUNITY</h4>
+                <h4>3RD PARTY APP</h4>
                 <ul>
-                    <li><a href="https://discord.com/invite/xfeYT6acha" target="_blank" rel="noreferrer">Discord</a></li>
-                    <li><a href="https://t.me/deusfinance" target="_blank" rel="noreferrer">Telegram</a></li>
+                    <li><a href="" target="_blank" rel="noreferrer">DSYNTHS.COM</a></li>
                 </ul>
             </div>
             <div className="group">
-                <h4>CONTRACTS</h4>
+                <h4>DEI STABLECOIN</h4>
                 <ul>
-                    <li>
-                        <a href="https://etherscan.io/token/0x3b62f3820e0b035cc4ad602dece6d796bc325325" target="_blank" rel="noreferrer">
-                            DEUS
-                        </a>
-                    </li>
-                    <li><a href="https://etherscan.io/token/0x80ab141f324c3d6f2b18b030f1c4e95d4d658778" target="_blank" rel="noreferrer">
-                        DEA
-                    </a>
-                    </li>
+                    <li><a href={baseURL + "/"} target="_blank" rel="noreferrer">MINT</a></li>
+                    <li><a href={baseURL + "/"} target="_blank" rel="noreferrer">STAKING</a></li>
+                    <li><a href={baseURL + "/"} target="_blank" rel="noreferrer">REDEEM</a></li>
+                    <li><a href={baseURL + "/"} target="_blank" rel="noreferrer">BUYBACK &amp; RECOLLAT</a></li>
+                </ul>
+            </div>
+            <div className="group">
+                <h4>COMMUNITY</h4>
+                <ul>
+                    <li><a href="https://twitter.com/DeusDao" target="_blank" rel="noreferrer">Twitter</a></li>
+                    <li><a href="https://discord.com/invite/xfeYT6acha" target="_blank" rel="noreferrer">Discord</a></li>
+                    <li><a href="https://t.me/deusfinance" target="_blank" rel="noreferrer">Telegram</a></li>
                 </ul>
             </div>
         </div>
