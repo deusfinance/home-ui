@@ -281,7 +281,7 @@ html {
 }
 
 .home-wrapper,
-.echo-system,
+.eco-system,
 .home2 {
   max-width: 1650px;
   width: 85%;
@@ -712,7 +712,7 @@ html {
   font-weight: 300;
 }
 
-.deus-echo {
+.deus-eco {
   color: #ffffff;
   margin-top: 130px;
   width: 100%;
@@ -720,13 +720,13 @@ html {
   position: relative;
 }
 
-.deus-echo .title {
+.deus-eco .title {
   font-family: Edu Monument Grotesk Semi-Mono;
   font-weight: 400;
   font-size: 25px;
 }
 
-.deus-echo .description {
+.deus-eco .description {
   font-weight: 300;
   font-size: 20px;
 }
@@ -810,7 +810,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-.echo-system {
+.eco-system {
   position: relative;
   padding-left: 5%;
   margin: auto;
@@ -818,15 +818,15 @@ html {
   text-align: center;
 }
 
-.echo-system br {
+.eco-system br {
   display: none;
 }
 
-.echo-system img {
+.eco-system img {
   width: 100%;
 }
 
-.echo-system .mobile {
+.eco-system .mobile {
   margin: auto;
   max-width: 400px;
   display: none;
@@ -985,20 +985,20 @@ html {
     font-size: 14px;
     line-height: 14px;
   }
-  .echo-system .mobile {
+  .eco-system .mobile {
     padding-left: 0;
     margin: auto;
     margin-top: 80px;
     display: block;
   }
-  .echo-system .desktop {
+  .eco-system .desktop {
     display: none;
   }
 }
 
 @media screen and (max-width: 480px) {
   .home-wrapper,
-  .echo-system,
+  .eco-system,
   .home2 {
     width: 90%;
   }

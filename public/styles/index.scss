@@ -69,7 +69,6 @@ html {
 		max-width: 100%;
 	}
 	.roadmap-img-mobile {
-		max-width: 100%;
 		display: none;
 	}
 }
@@ -78,20 +77,32 @@ html {
 	width: 100%;
 	.ecosystem-img {
 		max-width: 100%;
+		margin: 0 auto;
+	}
+	.ecosystem-desktop {
+		display: block;
+	}
+	.ecosystem-mobile {
+		display: none;
 	}
 	.ecosystem-text {
 		font-family: Roboto;
 		font-weight: bold;
-		position: absolute;
-		max-width: 22%;
-		margin-top: 10px;
-		margin-left: 20px;
-	}
-	.ecosystem-title {
+		margin: 80px auto;
+		text-align: center;
 
-	}
-	.ecosystem-subtitle {
-		
+		.ecosystem-title {
+			margin-top: 0;
+			font-weight: 500;
+			font-size: 38px;
+			background: linear-gradient(98.22deg, #e45b5b 35%, #5e5be4 55%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin-bottom: 35px;
+		}
+		.ecosystem-subtitle {
+			font-size: 18px;
+		}
 	}
 }
 
@@ -102,7 +113,7 @@ html {
 }
 
 .home-wrapper,
-.echo-system,
+.eco-system,
 .home2 {
 	max-width: 1650px;
 	width: 85%;
@@ -455,7 +466,7 @@ html {
 	}
 }
 
-.deus-echo {
+.deus-eco {
 	color: #ffffff;
 	margin-top: 130px;
 	width: 100%;
@@ -522,7 +533,7 @@ html {
 	-webkit-text-fill-color: transparent;
 }
 
-.echo-system {
+.eco-system {
 	position: relative;
 	// width: 75%;
 	// max-width: 1500px;
@@ -748,7 +759,7 @@ html {
 		}
 	}
 
-	.echo-system {
+	.eco-system {
 		.mobile {
 			padding-left: 0;
 			margin: auto;
@@ -795,7 +806,7 @@ html {
 
 @media screen and (max-width: 480px) {
 	.home-wrapper,
-	.echo-system,
+	.eco-system,
 	.home2 {
 		width: 90%;
 	}
@@ -811,10 +822,20 @@ html {
 			display: none;
 		}
 		.roadmap-img-mobile {
-			max-width: 100%;
+			margin: -75px auto;
+			max-width: 85%;
 			display: block;
 		}
 	}
+	.ecosystem-warp {
+		.ecosystem-desktop {
+			display: none;
+		}
+		.ecosystem-mobile {
+			display: block;
+		}
+	}
+
 	.deus-logo {
 		max-width: 80%;
 		margin-bottom: 10px;
