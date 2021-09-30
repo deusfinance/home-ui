@@ -76,11 +76,12 @@ html {
 .ecosystem-warp {
 	width: 100%;
 	.ecosystem-img {
-		max-width: 100%;
-		margin: 0 auto;
+		max-width: 80%;
+    	margin: 0 auto;
 	}
 	.ecosystem-desktop {
 		display: block;
+		text-align: center;
 	}
 	.ecosystem-mobile {
 		display: none;
