@@ -1,4 +1,10 @@
 @font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: 300;
+}
+
+@font-face {
   font-family: Lambok;
   src: url("../fonts/Lombok.ttf");
 }

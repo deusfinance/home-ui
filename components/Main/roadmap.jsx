@@ -1,11 +1,29 @@
-import React from 'react';
+import React from 'react'
+import styled from 'styled-components'
 
+import { useWindowSize } from '../../hooks/useWindowSize'
+
+const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #242424;
+  justify-content: center;
+  margin: 0 auto;
+`
 
 const Roadmap = () => {
-    return (<div className="roadmap-warp">
-        <img src="/img/roadmap2.svg" alt="dei" className="roadmap-img-desktop" />
-        <img src="/img/RoadmapMobile.svg" alt="dei" className="roadmap-img-mobile" />
-    </div>);
+  const { width } = useWindowSize()
+  return (
+    <Wrapper>
+      {width > 950 ? (
+        <img src="/img/roadmapDesktop.svg" alt="roadmap_desktop" style={{width: '85%'}}/>
+      ) : (
+        <img src="/img/roadmapMobile.png" alt="roadmap_mobile" style={{width: '100%'}}/>
+      )}
+    </Wrapper>
+  );
 }
 
 export default Roadmap;
