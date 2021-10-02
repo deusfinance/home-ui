@@ -34,6 +34,13 @@ const Group = styled.div`
   flex-flow: column nowrap;
   margin: 20px 0;
 
+  li{
+    margin: 10px 0;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
   & > * {
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove padding */

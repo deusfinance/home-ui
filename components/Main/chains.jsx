@@ -8,13 +8,13 @@ const Wrapper = styled.div`
   grid-auto-flow: column;
   grid-gap: 20px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 125px;
   padding: 0 30px;
 
   @media only screen and (max-width: 800px) {
     grid-auto-flow: row;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 125px;
   }
 `
 
@@ -80,36 +80,36 @@ const ChainsWrapper = styled.div`
 `
 
 const Chains = () => {
-  const { width } = useWindowSize()
-  const dsynthsImageWith = width > 800 ? '200px' : '300px'
-  return (
-    <Wrapper>
-      <ContentWrapper>
-        <ContentHeaderText>DEUS supports multiple chains simultaneously with one unified bridge</ContentHeaderText>
-        <ChainsWrapper>
-          <img src="/img/chains/eth.png" alt="eth"/>
-          <img src="/img/chains/polygon.jpg" alt="polygon" />
-          <img src="/img/chains/avax.svg" alt="avax" />
-          <img src="/img/chains/heco.svg" alt="heco" />
-          <img src="/img/chains/bsc.png" alt="bsc" />
-          <img src="/img/chains/xdai.svg" alt="xdai" />
-          <img src="/img/chains/question-mark.png" alt="question" />
-        </ChainsWrapper>
-      </ContentWrapper>
-      <ContentWrapperRight>
-        <ContentHeaderText style={{maxWidth: '400px'}}>
-          Check out our first Contractor building on DEUS Finance named &#160;
-          <a href="https://www.dsynths.com" target="blank" style={{textDecoration: 'underline'}}>
-            dSynths
-          </a>
-          , where you can trade synthetics!
-        </ContentHeaderText>
-        <a href="https://www.dsynths.com" target="blank" style={{textDecoration: 'underline'}}>
-          <img src="/img/dsynths.png" alt="dsynths" style={{maxWidth: dsynthsImageWith, marginTop: '20px'}}/>
-        </a>
-      </ContentWrapperRight>
-    </Wrapper>
-  )
+    const { width } = useWindowSize()
+    const dsynthsImageWith = width > 800 ? '200px' : '300px'
+    return (
+        <Wrapper>
+            <ContentWrapper>
+                <ContentHeaderText>DEUS supports multiple chains simultaneously with one unified bridge</ContentHeaderText>
+                <ChainsWrapper>
+                    <img src="/img/chains/eth.png" alt="eth" />
+                    <img src="/img/chains/polygon.jpg" alt="polygon" />
+                    <img src="/img/chains/avax.svg" alt="avax" />
+                    <img src="/img/chains/heco.svg" alt="heco" />
+                    <img src="/img/chains/bsc.png" alt="bsc" />
+                    <img src="/img/chains/xdai.svg" alt="xdai" />
+                    <img src="/img/chains/question-mark.png" alt="question" />
+                </ChainsWrapper>
+            </ContentWrapper>
+            <ContentWrapperRight>
+                <ContentHeaderText style={{ maxWidth: '400px' }}>
+                    Check out our first Contractor building on DEUS Finance named &#160;
+                    <a href="https://www.dsynths.com" target="blank" style={{ textDecoration: 'underline' }}>
+                        dSynths
+                    </a>
+                    , where you can trade synthetics!
+                </ContentHeaderText>
+                <a href="https://www.dsynths.com" target="blank" style={{ textDecoration: 'underline' }}>
+                    <img src="/img/dsynths.png" alt="dsynths" style={{ maxWidth: dsynthsImageWith, marginTop: '20px' }} />
+                </a>
+            </ContentWrapperRight>
+        </Wrapper>
+    )
 }
 
 export default Chains;

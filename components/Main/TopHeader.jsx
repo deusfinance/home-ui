@@ -22,8 +22,8 @@ const TopHeader = ({ baseURL }) => {
                         <span className="next-gen">
                             DEUS Finance Evolution is a marketplace of decentralized financial services, <br />
                             where we provide the infrastructure for others to build financial instruments, <br />
-                            such as synthetic stock trading platforms, options, and futures trading.<br/>
-                             <a href={'https://medium.com/deus-finance/introducing-deus-finance-v2-apollo-c12b0929945f'} target="_blank" rel="noreferrer" style={{color: '#087CE3'}}>Learn more about V2</a>
+                            such as synthetic stock trading platforms, options, and futures trading.<br />
+                            <a href={'https://medium.com/deus-finance/introducing-deus-finance-v2-apollo-c12b0929945f'} target="_blank" rel="noreferrer" style={{ color: '#087CE3' }}>Learn more about V2</a>
                         </span>
                         <br />
                     </h4>
@@ -33,11 +33,19 @@ const TopHeader = ({ baseURL }) => {
                 </div>
             </div>
             <div className="btns-wrap">
-                <a className="buy-tokens" href='https://app.deus.finance/stable/mint' target="_blank" rel="noreferrer">
-                    <span> BUY $DEI </span>
-                </a>
+                <div className="buy-tokens" >
+                    <span> BUY $DEUS </span>
+                    <ul>
+                        <li className="uni">
+                            <a href='https://app.uniswap.org/#/swap?outputCurrency=0xxxxxxxxxx' target="_blank" rel="noreferrer">Uniswap (ETH)</a>
+                        </li>
+                        <li className="quick">
+                            <a href='https://quickswap.exchange/#/swap?outputCurrency=0xxxxxxxxxx' target="_blank" rel="noreferrer">QuickSwap (Polygon)</a>
+                        </li>
+                    </ul>
+                </div>
                 <a className="work-btn-wrap " href={"https://medium.com/deus-finance/deus-finance-v2-apollo-faq-3185da65147b"} target="_blank" rel="noreferrer" style={{ display: 'flex', justifyContent: 'center', marginLeft: 10 }}>
-                    <div className="work-btn"> LEARN MORE </div>
+                    <div className="work-btn"> FAQ </div>
                     <div style={{ marginLeft: 8, marginTop: '-3px' }}>→</div>
                 </a>
             </div>

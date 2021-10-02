@@ -24,7 +24,7 @@ const Navbar = (props) => {
     useEffect(() => {
         const getNavs = async () => {
             try {
-                fetch('https://raw.githubusercontent.com/deusfinance/app-ui/dei/src/config/routes.json')
+                fetch('https://raw.githubusercontent.com/deusfinance/app-ui/migrator/src/config/routes.json')
                     .then((response) => response.json())
                     .then((routes) => {
                         setMobileNavs(routes);
@@ -88,14 +88,14 @@ const Navbar = (props) => {
                                     </ExternalLink>
                                 } else {
                                     if (nav.id === "MEDIUM") {
-                                      res = <ExternalLink href={nav.path} >
-                                          <img src={`/img/navbar/medium.svg`} alt="medium"/>
-                                      </ExternalLink>
+                                        res = <ExternalLink href={nav.path} >
+                                            <img src={`/img/navbar/medium.svg`} alt="medium" />
+                                        </ExternalLink>
                                     } else {
-                                      console.log(nav);
-                                      res = <ExternalLink href={nav.path} >
-                                          <span> {t(nav.id)} </span>
-                                      </ExternalLink>
+                                        console.log(nav);
+                                        res = <ExternalLink href={nav.path} >
+                                            <span> {t(nav.id)} </span>
+                                        </ExternalLink>
                                     }
                                 }
                             }

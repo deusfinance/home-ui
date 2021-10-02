@@ -30,12 +30,12 @@ html {
 }
 
 .grad-color-2 {
-	background: #12CDD4;
-	background: -webkit-linear-gradient(to left, #12CDD4 0%, #D2267B 100%);
-	background: -moz-linear-gradient(to left, #12CDD4 0%, #D2267B 100%);
-  background: linear-gradient(to left, #12CDD4 0%, #D2267B 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: #12cdd4;
+	background: -webkit-linear-gradient(to left, #12cdd4 0%, #d2267b 100%);
+	background: -moz-linear-gradient(to left, #12cdd4 0%, #d2267b 100%);
+	background: linear-gradient(to left, #12cdd4 0%, #d2267b 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	font-weight: 500;
 }
 
@@ -87,7 +87,7 @@ html {
 	width: 100%;
 	.ecosystem-img {
 		max-width: 80%;
-    	margin: 0 auto;
+		margin: 0 auto;
 	}
 	.ecosystem-desktop {
 		display: block;
@@ -245,11 +245,58 @@ html {
 		font-weight: 400;
 		line-height: 28px;
 		text-align: center;
+		position: relative;
 		display: flex;
 		align-items: center;
+		z-index: 0;
 		justify-content: center;
+		cursor: default;
+		ul {
+			z-index: 2;
+			top: 53px;
+			position: absolute;
+			display: none;
+			list-style: none;
+			font-size: 17px;
+			width: calc(100% + 2px);
+
+			li {
+				width: 100%;
+				border: 1px solid #ffffff;
+				border-top: 0;
+				a {
+					display: inline-block;
+					padding: 8px 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.uni {
+				// border-top: 1px solid #ffffff;
+				&:hover {
+					// 33292e
+					background: #980045;
+					// background: #18020c;
+				}
+			}
+
+			.quick {
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+
+				&:hover {
+					background: #8247e5;
+				}
+			}
+		}
 		&:hover {
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+
 			filter: brightness(1.2);
+			ul {
+				display: block;
+			}
 		}
 	}
 }
@@ -641,6 +688,9 @@ html {
 		.buy-tokens {
 			height: 50px;
 			font-size: 17px;
+			ul {
+				top: 48px;
+			}
 		}
 	}
 	.work-btn-wrap {
@@ -717,8 +767,17 @@ html {
 		margin-top: 50px;
 		.buy-tokens {
 			font-size: 15px;
-			margin-right: 15px;
+			margin-right: 0px;
 			height: 45px;
+			ul {
+				top: 44px;
+				font-size: 12px;
+				li {
+					a {
+						padding: 5px 0;
+					}
+				}
+			}
 		}
 		.work-btn-wrap {
 			height: 45px;
@@ -753,7 +812,7 @@ html {
 			}
 
 			.trasnpose {
-				// margin-top: 30px;
+				margin-top: 15px;
 				font-size: 18px;
 				font-weight: 300;
 				line-height: 19px;
