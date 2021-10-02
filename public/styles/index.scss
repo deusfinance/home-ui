@@ -29,6 +29,16 @@ html {
 	opacity: 0.85;
 }
 
+.grad-color-2 {
+	background: #12CDD4;
+	background: -webkit-linear-gradient(to left, #12CDD4 0%, #D2267B 100%);
+	background: -moz-linear-gradient(to left, #12CDD4 0%, #D2267B 100%);
+  background: linear-gradient(to left, #12CDD4 0%, #D2267B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: 500;
+}
+
 .supported-chains {
 	max-width: 900px;
 	margin: auto;
@@ -64,7 +74,7 @@ html {
 
 .roadmap-warp {
 	width: 100%;
-	margin-bottom: 150px;
+	margin-bottom: 40px;
 	.roadmap-img-desktop {
 		max-width: 100%;
 	}

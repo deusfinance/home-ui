@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>DEUS finance</title>
+        <title>DEUS Finance</title>
         <meta name="description" content="UNLIMITED ACCESS TO GLOBAL MARKETS DEUS Finance Evolution is a marketplace of decentralized financial services,
           where we provide the infrastructure for others to build financial instruments,
           such as synthetic stock trading platforms, options, and futures trading." />
@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="keywords" content="deus,dea" />
         <meta name="author" content="deus finance" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="imgs/favicon.ico" />
+        <link rel="icon" href="img/favicon.ico" />
         <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet'></link>
       </Head>
 

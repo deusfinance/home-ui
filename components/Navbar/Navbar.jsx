@@ -41,23 +41,23 @@ const Navbar = (props) => {
     }, [])
 
     useEffect(() => {
-        const getTVL = async () => {
-            const url = baseURL + "/tvl.json"
-            try {
-                const resp = await fetch(url)
-                const result = await resp.json()
-                const intResult = parseInt(result.stakingLockedValue + result.vaultLockedValue + result.uniswapLockedValue + result.balancerLockedValue + result.etherLockedInMarketMaker + result.stakingV2LockedValue)
-                var formatter = new Intl.NumberFormat('en-US', {
-                    style: 'currency',
-                    currency: 'USD',
-                    minimumFractionDigits: 0
-                });
-                setTvl(formatter.format(intResult))
-            } catch (error) {
-                console.log("fetch " + url + " had some error", error);
-            }
-        }
-        getTVL()
+        // const getTVL = async () => {
+        //     const url = baseURL + "/tvl.json"
+        //     try {
+        //         const resp = await fetch(url)
+        //         const result = await resp.json()
+        //         const intResult = parseInt(result.stakingLockedValue + result.vaultLockedValue + result.uniswapLockedValue + result.balancerLockedValue + result.etherLockedInMarketMaker + result.stakingV2LockedValue)
+        //         var formatter = new Intl.NumberFormat('en-US', {
+        //             style: 'currency',
+        //             currency: 'USD',
+        //             minimumFractionDigits: 0
+        //         });
+        //         setTvl(formatter.format(intResult))
+        //     } catch (error) {
+        //         console.log("fetch " + url + " had some error", error);
+        //     }
+        // }
+        // getTVL()
     }, [baseURL])
 
     return (<>
@@ -87,9 +87,16 @@ const Navbar = (props) => {
                                         <img src={`/img/navbar/${nav.id}.svg`} alt="" />
                                     </ExternalLink>
                                 } else {
-                                    res = <ExternalLink href={nav.path} >
-                                        <span> {t(nav.id)} </span>
-                                    </ExternalLink>
+                                    if (nav.id === "MEDIUM") {
+                                      res = <ExternalLink href={nav.path} >
+                                          <img src={`/img/navbar/medium.svg`} alt="medium"/>
+                                      </ExternalLink>
+                                    } else {
+                                      console.log(nav);
+                                      res = <ExternalLink href={nav.path} >
+                                          <span> {t(nav.id)} </span>
+                                      </ExternalLink>
+                                    }
                                 }
                             }
                         } else {
