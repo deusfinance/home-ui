@@ -160,7 +160,7 @@ const Navbar = (props) => {
                                     res = <div key={index} > {res}
                                         {nav.children.map((subnav, index) => {
                                             if (subnav.path.charAt(0) === "/")
-                                                return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text" href={baseURL + subnav.path} > {t(subnav.id)} </ExternalLink></li>
+                                                return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text mobile-nav-text" href={baseURL + subnav.path} > {t(subnav.id)} </ExternalLink></li>
                                             return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text" href={baseURL + subnav.path} textDecoration="none">
                                                 <span>{t(subnav.id)}</span>
                                             </ExternalLink></li>
