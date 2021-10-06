@@ -142,12 +142,12 @@ const Navbar = (props) => {
                                 if (nav.path) {
                                     if (nav.path.charAt(0) === "/") {
                                         res = <li key={index} className="nav-item-box">
-                                            <ExternalLink className="nav-item-text nav-item-ln" to={nav.path} >
+                                            <ExternalLink className="nav-item-text nav-item-ln" href={baseURL + nav.path} >
                                                 {t(nav.id)}
                                             </ExternalLink> </li>
                                     } else if (!nav.image) {
                                         res = <div key={index} className="nav-item-box" style={{ marginTop: "10px" }}>
-                                            <li> <ExternalLink href={nav.path} className="nav-item-text" >{t(nav.id)}</ExternalLink> </li>
+                                            <li> <ExternalLink href={baseURL + nav.path} className="nav-item-text" >{t(nav.id)}</ExternalLink> </li>
                                         </div>
                                     }
                                 } else {
@@ -160,8 +160,8 @@ const Navbar = (props) => {
                                     res = <div key={index} > {res}
                                         {nav.children.map((subnav, index) => {
                                             if (subnav.path.charAt(0) === "/")
-                                                return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text" to={subnav.path} > {t(subnav.id)} </ExternalLink></li>
-                                            return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text" href={subnav.path} textDecoration="none">
+                                                return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text mobile-nav-text" href={baseURL + subnav.path} > {t(subnav.id)} </ExternalLink></li>
+                                            return <li key={subnav.id + "_mobile" + index} className="nav-item-box"><ExternalLink className="nav-item-text" href={baseURL + subnav.path} textDecoration="none">
                                                 <span>{t(subnav.id)}</span>
                                             </ExternalLink></li>
                                         })}
@@ -173,7 +173,7 @@ const Navbar = (props) => {
                             {<div className="nav-item-wrap-img" style={{ marginTop: "5px", marginBottom: "20px" }}>
                                 {mobileNavs.filter(nav => nav.image).map((nav, index) => {
                                     let res = null
-                                    res = <ExternalLink href={nav.path}  >
+                                    res = <ExternalLink href={baseURL + nav.path}  >
                                         <img width='20px' height="20px" src={`/img/navbar/${nav.id}.svg`} alt="" />
                                     </ExternalLink>
                                     return <li key={nav.id + index} className="nav-item-img">{res}</li>
