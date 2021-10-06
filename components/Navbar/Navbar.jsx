@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { ExternalLink } from '../Link';
 import { StaticRouter as Router } from 'react-router-dom';
 import OutsideClickHandler from 'react-outside-click-handler';
-import LanguageSelector from './LanguageSelector';
 import {
     NavbarContentWrap,
     NavbarWrap,
@@ -27,8 +26,20 @@ const Navbar = (props) => {
                 fetch('https://raw.githubusercontent.com/deusfinance/app-ui/migrator/src/config/routes.json')
                     .then((response) => response.json())
                     .then((routes) => {
-                        setMobileNavs(routes);
-                        setDesktopNavs([...routes].reverse());
+                        routes = routes.reverse()
+                        const mobNavs = [
+                            ...routes.slice(0, 4),
+                            routes[5],
+                            {
+                                "id": "APP",
+                                "text": "APP",
+                                "children": [
+                                    routes[6], routes[4]
+                                ]
+                            },
+                        ]
+                        setMobileNavs(mobNavs.reverse());
+                        setDesktopNavs(routes);
                     })
                     .catch((error) => {
                         console.error(error);
@@ -180,9 +191,6 @@ const Navbar = (props) => {
                                 })}
                             </div>}
 
-                            <li className="nav-item-lg" >
-                                <LanguageSelector />
-                            </li>
                         </ul>
                     </NavbarMobileContent>
                 </OutsideClickHandler>

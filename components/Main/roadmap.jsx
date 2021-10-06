@@ -18,9 +18,9 @@ const Roadmap = () => {
   return (
     <Wrapper>
       {width > 950 ? (
-        <img src="/img/roadmapDesktop.svg" alt="roadmap_desktop" style={{width: '85%'}}/>
+        <img src="/img/roadmapDesktop.svg" alt="roadmap_desktop" style={{ width: '85%' }} />
       ) : (
-        <img src="/img/roadmapMobile.png" alt="roadmap_mobile" style={{width: '100%'}}/>
+        <img src="/img/roadmapMobile.png" alt="roadmap_mobile" style={{ width: '100%', maxWidth: "400px" }} />
       )}
     </Wrapper>
   );
