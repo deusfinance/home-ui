@@ -184,7 +184,7 @@ const Navbar = (props) => {
                             {<div className="nav-item-wrap-img" style={{ marginTop: "5px", marginBottom: "20px" }}>
                                 {mobileNavs.filter(nav => nav.image).map((nav, index) => {
                                     let res = null
-                                    res = <ExternalLink href={baseURL + nav.path}  >
+                                    res = <ExternalLink href={nav.path}  >
                                         <img width='20px' height="20px" src={`/img/navbar/${nav.id}.svg`} alt="" />
                                     </ExternalLink>
                                     return <li key={nav.id + index} className="nav-item-img">{res}</li>
