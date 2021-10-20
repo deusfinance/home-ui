@@ -75,25 +75,25 @@ const DeusTokens = () => {
   return (
     <Wrapper>
       {/*// sorry this is an image but it's really hard to do lineair gradient to a piece of text (for actual styling check .grad-color-2)*/}
-      <img src="/img/deus_tokens_title.png" style={{height: '35px', alignSelf: 'center'}}/>
+      <img src="/img/deus_tokens_title.png" style={{ height: '35px', alignSelf: 'center' }} />
       {width > 1000 ? (
-        <img src="/img/deus_tokens.png" style={{maxWidth: '70%', alignSelf: 'center'}}/>
+        <img src="/img/deus_tokens_2.png" style={{ maxWidth: '70%', alignSelf: 'center' }} />
       ) : (
         <>
           <Introduction>
             <p>The DEUS Ecosystem consists of two tokens: DEUS and DEI.</p>
             <p>
-              DEI is a cross-chain, fractional reserve stablecoin, with one unified bridge to all chains. Read more about DEI <a href="#" style={{textDecoration: 'underline'}}>here</a>. <br/><br/>
-              DEUS is the protocol token which is used for governance and to mint DEI tokens via buring DEUS. <br/><br/>
+              DEI is a cross-chain, fractional reserve stablecoin, with one unified bridge to all chains. Read more about DEI <a href="#" style={{ textDecoration: 'underline' }}>here</a>. <br /><br />
+              DEUS is the protocol token which is used for governance and to mint DEI tokens via buring DEUS. <br /><br />
               Every 3rd-party financial instrument that builds on top of DEUS Finance’s infrastructure uses DEI as its collateral mechanism.
             </p>
           </Introduction>
           <Card>
             <LogoWrapper>
-              <img src="/img/icons/deus.png"/>
+              <img src="/img/icons/deus.png" />
               <p>DEUS</p>
             </LogoWrapper>
-            <HorizontalLine/>
+            <HorizontalLine />
             <List>
               <li>Protocol token</li>
               <li>Governance for DEUS DAO</li>
@@ -105,10 +105,10 @@ const DeusTokens = () => {
           </Card>
           <Card>
             <LogoWrapper>
-              <img src="/img/icons/dei.png"/>
+              <img src="/img/icons/dei.png" />
               <p>DEI</p>
             </LogoWrapper>
-            <HorizontalLine/>
+            <HorizontalLine />
             <List>
               <li>Fractional reserve stablecoin</li>
               <li>Majority backed by a trusted stable</li>
