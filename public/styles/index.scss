@@ -288,6 +288,13 @@ html {
 					background: #8247e5;
 				}
 			}
+
+			.deus-swap {
+				&:hover {
+					color: #000000;
+					background: #1ac8ee;
+				}
+			}
 		}
 		&:hover {
 			border-bottom-left-radius: 0px;
