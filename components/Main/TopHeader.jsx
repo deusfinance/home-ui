@@ -37,10 +37,10 @@ const TopHeader = ({ baseURL }) => {
                     <span> BUY $DEUS </span>
                     <ul>
                         <li className="uni">
-                            <a href='https://app.uniswap.org/#/swap?use=V2&outputCurrency=0xDE5ed76E7c05eC5e4572CfC88d1ACEA165109E44&inputCurrency=0xDE12c7959E1a72bbe8a5f7A1dc8f8EeF9Ab011B3' target="_blank" rel="noreferrer">Uniswap (ETH)</a>
+                            <a href='https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xde5ed76e7c05ec5e4572cfc88d1acea165109e44' target="_blank" rel="noreferrer">Uniswap (ETH)</a>
                         </li>
                         <li className="quick">
-                            <a href='https://quickswap.exchange/#/swap?outputCurrency=0xDE5ed76E7c05eC5e4572CfC88d1ACEA165109E44&inputCurrency=0xDE12c7959E1a72bbe8a5f7A1dc8f8EeF9Ab011B3' target="_blank" rel="noreferrer">QuickSwap (Polygon)</a>
+                            <a href='https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xde5ed76e7c05ec5e4572cfc88d1acea165109e44' target="_blank" rel="noreferrer">QuickSwap (Polygon)</a>
                         </li>
                     </ul>
                 </div>
