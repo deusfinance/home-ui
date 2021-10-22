@@ -83,10 +83,10 @@ const Footer = ({ baseURL }) => {
       <Group>
         <Title>RESOURCES</Title>
         <ul>
-          <li><a href="https://medium.com/deus-finance/deus-finance-v2-apollo-faq-3185da65147b" target="_blank" rel="noreferrer">FAQ</a></li>
+          <li><a href="https://medium.com/@deusfinance/deus-finance-v2-apollo-faq-cda071f6327c" target="_blank" rel="noreferrer">FAQ</a></li>
           <li><a href="https://github.com/deusfinance" target="_blank" rel="noreferrer">GITHUB</a></li>
           <li><a href="https://www.youtube.com/channel/UCEVRMEr1Kt-n6ycQSEYBScQ" target="_blank" rel="noreferrer">YOUTUBE</a></li>
-          <li><a href="https://medium.com/deus-finance" target="_blank" rel="noreferrer">MEDIUM</a></li>
+          <li><a href="https://medium.com/@deusfinance" target="_blank" rel="noreferrer">MEDIUM</a></li>
         </ul>
       </Group>
       <Group>
