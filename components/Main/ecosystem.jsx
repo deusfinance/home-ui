@@ -12,7 +12,7 @@ const Ecosystem = () => {
             <br />
             <span className="ecosystem-subtitle">
                 DEI is a cross-chain, fractional reserve stablecoin, with one unified bridge to all chains.
-                Read more about DEI <a style={{ textDecoration: "underline" }} href="https://medium.com/deus-finance/dei-cross-chain-liquidity-with-a-fractional-reserve-stablecoin-3e37b7c64720" target="_blank" rel="noopener noreferrer">here</a>.
+                Read more about DEI <a style={{ textDecoration: "underline" }} href="https://medium.com/@deusfinance/dei-cross-chain-liquidity-with-a-fractional-reserve-stablecoin-dbd3a927f8ef" target="_blank" rel="noopener noreferrer">here</a>.
             </span>
             <br />
             <br />
