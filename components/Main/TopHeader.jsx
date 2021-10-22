@@ -47,7 +47,7 @@ const TopHeader = ({ baseURL }) => {
                         </li>
                     </ul>
                 </div>
-                <a className="work-btn-wrap " href={"https://medium.com/deus-finance/deus-finance-v2-apollo-faq-3185da65147b"} target="_blank" rel="noreferrer" style={{ display: 'flex', justifyContent: 'center', marginLeft: 10 }}>
+                <a className="work-btn-wrap " href={"https://medium.com/@deusfinance/deus-finance-v2-apollo-faq-cda071f6327c"} target="_blank" rel="noreferrer" style={{ display: 'flex', justifyContent: 'center', marginLeft: 10 }}>
                     <div className="work-btn"> FAQ </div>
                     <div style={{ marginLeft: 8, marginTop: '-3px' }}>→</div>
                 </a>
