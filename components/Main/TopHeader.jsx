@@ -23,7 +23,7 @@ const TopHeader = ({ baseURL }) => {
                             DEUS Finance Evolution is a marketplace of decentralized financial services, <br />
                             where we provide the infrastructure for others to build financial instruments, <br />
                             such as synthetic stock trading platforms, options, and futures trading.<br />
-                            <a href={'https://medium.com/deus-finance/introducing-deus-finance-v2-apollo-c12b0929945f'} target="_blank" rel="noreferrer" style={{ color: '#087CE3' }}>Learn more about V2</a>
+                            <a href={'https://medium.com/@deusfinance/introducing-deus-finance-v2-apollo-5b29b42b1152'} target="_blank" rel="noreferrer" style={{ color: '#087CE3' }}>Learn more about V2</a>
                         </span>
                         <br />
                     </h4>
