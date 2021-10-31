@@ -23,7 +23,7 @@ const Navbar = (props) => {
     useEffect(() => {
         const getNavs = async () => {
             try {
-                fetch('https://raw.githubusercontent.com/deusfinance/app-ui/migrator/src/config/routes.json')
+                fetch('https://raw.githubusercontent.com/deusfinance/app-ui/main/src/config/routes.json')
                     .then((response) => response.json())
                     .then((routes) => {
                         routes = routes.reverse()
