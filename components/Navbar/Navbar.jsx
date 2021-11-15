@@ -28,13 +28,12 @@ const Navbar = (props) => {
                     .then((routes) => {
                         routes = routes.reverse()
                         const mobNavs = [
-                            ...routes.slice(0, 4),
-                            routes[5],
+                            ...routes.slice(0, 5),
                             {
                                 "id": "APP",
                                 "text": "APP",
                                 "children": [
-                                    routes[6], routes[4]
+                                    ...routes.slice(5)
                                 ]
                             },
                         ]
