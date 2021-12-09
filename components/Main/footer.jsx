@@ -102,7 +102,6 @@ const Footer = ({ baseURL }) => {
           <li><a href={"https://app.deus.finance/stable/redeem"} target="_blank" rel="noreferrer">REDEEM</a></li>
           <li><a href={"https://app.deus.finance/stable/zap"} target="_blank" rel="noreferrer">ZAP</a></li>
           <li><a href={"https://app.deus.finance/stable/farms"} target="_blank" rel="noreferrer">FARMS</a></li>
-          <li><a href={"https://app.deus.finance/stable/buyback-recollat"} target="_blank" rel="noreferrer">BUYBACK &amp; RECOLLAT</a></li>
         </ul>
       </Group>
       <Group>
